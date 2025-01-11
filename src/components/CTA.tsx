@@ -5,7 +5,7 @@ export const CTA = () => {
   return (
     <section className="py-20 bg-[#121212]">
       <div className="container mx-auto px-4">
-        <div className="bg-gradient-to-r from-primary to-primary-light rounded-2xl p-8 md:p-12">
+        <div className="bg-[#4E94F4] rounded-2xl p-8 md:p-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-oxanium">
               Ready to Transform Your Bookkeeping?
