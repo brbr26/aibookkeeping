@@ -31,7 +31,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="group bg-[#1a365d] hover:bg-[#2d4a7c] text-white shadow-lg shadow-[#4E94F4]/25 hover:shadow-[#4E94F4]/40 transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto font-medium text-lg py-6"
+              className="group bg-[#2A1364] hover:bg-[#3B1D8F] text-white shadow-lg shadow-[#2A1364]/25 hover:shadow-[#2A1364]/40 transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto font-medium text-lg py-6"
             >
               Get Started Free
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
