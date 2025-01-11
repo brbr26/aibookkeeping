@@ -29,11 +29,18 @@ export const Hero = () => {
             Streamline your financial operations with AI-powered bookkeeping. Save time, reduce errors, and gain valuable insights into your business finances.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="group bg-gradient-to-r from-primary to-primary-light hover:opacity-90 transition-all duration-300 w-full sm:w-auto">
+            <Button 
+              size="lg" 
+              className="group bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] hover:from-[#7C3AED] hover:to-[#C026D3] text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto font-medium"
+            >
               Get Started Free
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="border-primary/20 hover:bg-primary/10 w-full sm:w-auto">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-2 border-[#8B5CF6] text-white hover:bg-[#8B5CF6]/10 hover:border-[#D946EF] transition-colors duration-200 w-full sm:w-auto font-medium"
+            >
               Schedule Demo
             </Button>
           </div>
