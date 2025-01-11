@@ -3,7 +3,7 @@ import { ArrowRight, Brain, CircuitBoard, Microchip } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <div className="pt-[160px] pb-20 px-4 relative overflow-hidden bg-[#121212]">
+    <div className="md:pt-[160px] pt-[80px] pb-20 px-4 relative overflow-hidden bg-[#121212]">
       {/* Background Icons */}
       <div className="absolute inset-0 z-0 opacity-[0.15]">
         <Brain className="absolute top-1/4 left-1/4 w-36 h-36 animate-float text-primary" />
@@ -25,7 +25,7 @@ export const Hero = () => {
               <span className="text-[#4E94F4] font-oxanium">Powered by AI</span>
             </h1>
           </div>
-          <p className="text-xl text-white/90 mb-12 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed max-w-2xl mx-auto">
             Streamline your financial operations with AI-powered bookkeeping. Save time, reduce errors, and gain valuable insights into your business finances.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
