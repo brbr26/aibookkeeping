@@ -18,10 +18,10 @@ export const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-white hover:text-primary transition-colors">Features</a>
-            <a href="#pricing" className="text-white hover:text-primary transition-colors">Pricing</a>
-            <a href="#contact" className="text-white hover:text-primary transition-colors">Contact</a>
-            <Button>Get Started</Button>
+            <a href="#features" className="text-white hover:text-primary transition-colors font-lato">Features</a>
+            <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato">Pricing</a>
+            <a href="#contact" className="text-white hover:text-primary transition-colors font-lato">Contact</a>
+            <Button className="font-lato">Get Started</Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -37,10 +37,10 @@ export const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden pt-4 pb-2">
             <div className="flex flex-col gap-4">
-              <a href="#features" className="text-white hover:text-primary transition-colors">Features</a>
-              <a href="#pricing" className="text-white hover:text-primary transition-colors">Pricing</a>
-              <a href="#contact" className="text-white hover:text-primary transition-colors">Contact</a>
-              <Button className="w-full">Get Started</Button>
+              <a href="#features" className="text-white hover:text-primary transition-colors font-lato">Features</a>
+              <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato">Pricing</a>
+              <a href="#contact" className="text-white hover:text-primary transition-colors font-lato">Contact</a>
+              <Button className="w-full font-lato">Get Started</Button>
             </div>
           </nav>
         )}
