@@ -31,7 +31,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="group bg-gradient-to-r from-[#C97DF1] to-[#D946EF] hover:from-[#7C3AED] hover:to-[#C026D3] text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto font-medium text-lg"
+              className="group bg-gradient-to-r from-[#4E94F4] to-[#D946EF] hover:from-[#4E94F4] hover:to-[#C026D3] text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto font-medium text-lg"
             >
               Get Started Free
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
