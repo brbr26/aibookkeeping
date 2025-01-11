@@ -21,7 +21,7 @@ export const Header = () => {
             <a href="#features" className="text-white hover:text-primary transition-colors font-lato">Features</a>
             <a href="#services" className="text-white hover:text-primary transition-colors font-lato">Services</a>
             <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato">Pricing</a>
-            <a href="#resources" className="text-white hover:text-primary transition-colors font-lato">Resources</a>
+            <a href="#resources" className="text-white hover:text-primary transition-colors font-lato mr-6">Resources</a>
             <Button 
               className="group bg-gradient-to-r from-[#C97DF1] to-[#D946EF] hover:from-[#7C3AED] hover:to-[#C026D3] text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
             >
