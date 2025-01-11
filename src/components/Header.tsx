@@ -19,7 +19,7 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-white hover:text-primary transition-colors font-lato">Features</a>
-            <a href="#services" className="text-white hover:text-primary transition-colors font-lato">Services</a>
+            <Link to="/services" className="text-white hover:text-primary transition-colors font-lato">Services</Link>
             <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato">Pricing</a>
             <a href="#resources" className="text-white hover:text-primary transition-colors font-lato mr-6">Resources</a>
             <Button 
@@ -43,7 +43,7 @@ export const Header = () => {
           <nav className="md:hidden pt-4 pb-2">
             <div className="flex flex-col gap-4">
               <a href="#features" className="text-white hover:text-primary transition-colors font-lato">Features</a>
-              <a href="#services" className="text-white hover:text-primary transition-colors font-lato">Services</a>
+              <Link to="/services" className="text-white hover:text-primary transition-colors font-lato">Services</Link>
               <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato">Pricing</a>
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato">Resources</a>
               <Button 
