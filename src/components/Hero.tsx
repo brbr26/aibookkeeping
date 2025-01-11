@@ -3,7 +3,7 @@ import { ArrowRight, Brain, CircuitBoard, Microchip } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <div className="pt-[200px] pb-20 px-4 relative overflow-hidden bg-black">
+    <div className="pt-[200px] pb-20 px-4 relative overflow-hidden bg-[#121212]">
       {/* Background Icons */}
       <div className="absolute inset-0 -z-10 opacity-5">
         <Brain className="absolute top-1/4 left-1/4 w-16 h-16 animate-float" />
@@ -14,7 +14,7 @@ export const Hero = () => {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black to-black -z-20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#121212]/50 via-[#121212] to-[#121212] -z-20" />
 
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
