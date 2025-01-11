@@ -5,16 +5,16 @@ export const Hero = () => {
   return (
     <div className="pt-[200px] pb-20 px-4 relative overflow-hidden bg-[#121212]">
       {/* Background Icons */}
-      <div className="absolute inset-0 -z-10 opacity-10">
-        <Brain className="absolute top-1/4 left-1/4 w-24 h-24 animate-float" />
-        <CircuitBoard className="absolute top-1/3 right-1/4 w-32 h-32 animate-float [animation-delay:2s]" />
-        <Microchip className="absolute bottom-1/4 left-1/3 w-36 h-36 animate-float [animation-delay:4s]" />
-        <Brain className="absolute bottom-1/3 right-1/3 w-24 h-24 animate-float [animation-delay:1s]" />
-        <CircuitBoard className="absolute top-1/2 left-1/2 w-32 h-32 animate-float [animation-delay:3s]" />
+      <div className="absolute inset-0 -z-10 opacity-20">
+        <Brain className="absolute top-1/4 left-1/4 w-36 h-36 animate-float text-primary/50" />
+        <CircuitBoard className="absolute top-1/3 right-1/4 w-48 h-48 animate-float [animation-delay:2s] text-primary/50" />
+        <Microchip className="absolute bottom-1/4 left-1/3 w-52 h-52 animate-float [animation-delay:4s] text-primary/50" />
+        <Brain className="absolute bottom-1/3 right-1/3 w-36 h-36 animate-float [animation-delay:1s] text-primary/50" />
+        <CircuitBoard className="absolute top-1/2 left-1/2 w-48 h-48 animate-float [animation-delay:3s] text-primary/50" />
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#121212]/50 via-[#121212] to-[#121212] -z-20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#121212]/30 via-[#121212] to-[#121212] -z-20" />
 
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
