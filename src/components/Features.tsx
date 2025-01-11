@@ -27,7 +27,7 @@ export const Features = () => {
   return (
     <section id="features" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-primary-dark mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-primary-dark mb-12 font-oxanium">
           Why Choose AI Bookkeeping?
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -39,7 +39,7 @@ export const Features = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <feature.icon className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-primary-dark mb-2">
+              <h3 className="text-xl font-semibold text-primary-dark mb-2 font-oxanium">
                 {feature.title}
               </h3>
               <p className="text-gray-600">
