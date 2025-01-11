@@ -3,7 +3,7 @@ import { ArrowRight, Brain, CircuitBoard, Microchip } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <div className="pt-[200px] pb-20 px-4 relative overflow-hidden bg-[#121212]">
+    <div className="pt-[160px] pb-20 px-4 relative overflow-hidden bg-[#121212]">
       {/* Background Icons */}
       <div className="absolute inset-0 z-0 opacity-[0.15]">
         <Brain className="absolute top-1/4 left-1/4 w-36 h-36 animate-float text-primary" />
