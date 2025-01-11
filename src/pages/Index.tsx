@@ -12,7 +12,7 @@ const Index = () => {
         title="AI Bookkeeping: Automated Finances for SMBs"
         description="Discover AI Bookkeeping, the smart solution for business owners. Automate bookkeeping, streamline accounting, and gain real-time financial insights. From tax planning to advanced analytics, our AI-powered platform helps you save time, reduce errors, and grow your business with confidence."
         keywords="AI bookkeeping, automated bookkeeping, smart accounting solutions, bookkeeping software, AI-powered accounting, real-time financial insights, tax planning, business automation, financial analytics, bookkeeping for small businesses, accounting automation, error-free bookkeeping, bookkeeping and tax compliance, scalable bookkeeping solutions, bookkeeping for entrepreneurs"
-        ogImage="/og-image.png"
+        ogImage="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png"
       />
       <Header />
       <main>
