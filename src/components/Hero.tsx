@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-dark mb-6">
-            Smart Bookkeeping,{" "}
+            <span className="text-white">Smart Bookkeeping</span>,{" "}
             <span className="text-primary">Powered by AI</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8">
