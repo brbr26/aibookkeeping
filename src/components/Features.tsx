@@ -34,15 +34,19 @@ export const Features = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="p-6 bg-[#1A1A1A] rounded-xl shadow-sm hover:shadow-md transition-shadow border border-primary/10"
+              className="p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out
+                        bg-gradient-to-br from-[#1A1A1A] via-[#220F50]/80 to-[#1A1A1A]
+                        border border-primary/20 hover:border-primary/40
+                        transform hover:-translate-y-1 group"
             >
-              <div className="w-12 h-12 bg-[#4E94F4]/10 rounded-lg flex items-center justify-center mb-4">
-                <feature.icon className="h-6 w-6 text-[#4E94F4]" />
+              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 
+                            group-hover:bg-primary/20 transition-colors duration-300">
+                <feature.icon className="h-7 w-7 text-[#4E94F4] group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-semibold text-[#4E94F4] mb-2 font-oxanium">
+              <h3 className="text-xl font-semibold text-[#4E94F4] mb-4 font-oxanium">
                 {feature.title}
               </h3>
-              <p className="text-gray-300">
+              <p className="text-gray-300 leading-relaxed">
                 {feature.description}
               </p>
             </div>
