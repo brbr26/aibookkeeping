@@ -25,13 +25,13 @@ export const Hero = () => {
               <span className="text-[#4E94F4] font-oxanium">Powered by AI</span>
             </h1>
           </div>
-          <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-white mb-12 leading-relaxed max-w-2xl mx-auto">
             Streamline your financial operations with AI-powered bookkeeping. Save time, reduce errors, and gain valuable insights into your business finances.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="group bg-[#4E94F4] hover:bg-[#4E94F4]/90 text-white shadow-lg shadow-[#4E94F4]/25 hover:shadow-[#4E94F4]/40 transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto font-medium text-lg py-6"
+              className="group bg-[#1a365d] hover:bg-[#2d4a7c] text-white shadow-lg shadow-[#4E94F4]/25 hover:shadow-[#4E94F4]/40 transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto font-medium text-lg py-6"
             >
               Get Started Free
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
