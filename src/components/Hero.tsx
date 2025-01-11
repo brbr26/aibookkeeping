@@ -6,7 +6,7 @@ export const Hero = () => {
     <div className="pt-[200px] pb-20 px-4">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-dark mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-primary-dark mb-6 font-oxanium">
             <span className="text-white">Smart Bookkeeping</span>,{" "}
             <span className="text-primary">Powered by AI</span>
           </h1>
