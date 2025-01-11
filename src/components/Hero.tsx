@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <div className="pt-24 pb-20 px-4">
+    <div className="pt-[100px] pb-20 px-4">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-dark mb-6">
