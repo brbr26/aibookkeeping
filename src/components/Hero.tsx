@@ -20,7 +20,7 @@ export const Hero = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/20 blur-xl opacity-50 -z-10" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-oxanium leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-['Oxanium'] leading-tight">
               <span className="text-white">Smart Bookkeeping</span>,{" "}
               <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">Powered by AI</span>
             </h1>
