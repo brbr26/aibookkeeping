@@ -27,7 +27,7 @@ export const Features = () => {
   return (
     <section id="features" className="py-20 bg-[#121212]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12 font-oxanium">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 font-oxanium">
           Why Choose AI Bookkeeping?
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
