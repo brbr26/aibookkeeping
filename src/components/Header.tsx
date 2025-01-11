@@ -23,7 +23,7 @@ export const Header = () => {
             <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our pricing">Pricing</a>
             <a href="#resources" className="text-white hover:text-primary transition-colors font-lato mr-6" aria-label="View our resources">Resources</a>
             <Button 
-              className="w-32 group bg-[#4E94F4] hover:bg-[#4E94F4]/90 text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
+              className="w-32 group bg-[#2A1364] hover:bg-[#3B1D8F] text-white shadow-lg shadow-[#2A1364]/25 hover:shadow-[#2A1364]/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
               aria-label="Get started with AI Bookkeeping"
             >
               Get Started
@@ -50,7 +50,7 @@ export const Header = () => {
               <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our pricing">Pricing</a>
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
               <Button 
-                className="w-full group bg-[#4E94F4] hover:bg-[#4E94F4]/90 text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
+                className="w-full group bg-[#2A1364] hover:bg-[#3B1D8F] text-white shadow-lg shadow-[#2A1364]/25 hover:shadow-[#2A1364]/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
                 aria-label="Get started with AI Bookkeeping"
               >
                 Get Started
