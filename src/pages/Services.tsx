@@ -8,7 +8,7 @@ const Services = () => {
     <div className="min-h-screen bg-[#121212]">
       <Header />
       
-      <main className="pt-24 pb-16">
+      <main className="md:pt-[160px] pt-[80px] pb-16">
         {/* Hero Section */}
         <section className="container mx-auto px-4 text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-oxanium text-white mb-6">
