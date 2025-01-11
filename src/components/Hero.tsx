@@ -20,12 +20,24 @@ export const Hero = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/20 blur-xl opacity-50 -z-10" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-oxanium leading-tight">
+            <h1 
+              className="text-4xl md:text-6xl font-bold mb-6 font-oxanium leading-tight content-visibility-auto"
+              style={{
+                containIntrinsicSize: '0 60px',
+                contentVisibility: 'auto'
+              }}
+            >
               <span className="text-white font-oxanium">Smarter Bookkeeping, Better Business Decisions,</span>{" "}
               <span className="text-[#4E94F4] font-oxanium">Powered by AI</span>
             </h1>
           </div>
-          <p className="text-lg md:text-xl text-white mb-12 leading-relaxed max-w-2xl mx-auto">
+          <p 
+            className="text-lg md:text-xl text-white mb-12 leading-relaxed max-w-2xl mx-auto"
+            style={{
+              containIntrinsicSize: '0 48px',
+              contentVisibility: 'auto'
+            }}
+          >
             Streamline your financial operations with AI-powered bookkeeping. Save time, reduce errors, and gain valuable insights into your business finances.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
