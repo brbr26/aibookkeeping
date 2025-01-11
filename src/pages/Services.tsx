@@ -8,10 +8,12 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <SEO 
-        title="Services - AI Bookkeeping - Placeholder Title"
-        description="Placeholder description for the services page"
-        keywords="placeholder, keywords, for, services, page"
+        title="AI-Powered Bookkeeping Services | AI Bookkeeping"
+        description="Discover our comprehensive AI-powered bookkeeping services including automated bookkeeping, financial reporting, tax preparation, and real-time monitoring. Transform your business finances with cutting-edge AI technology."
+        keywords="ai bookkeeping, automated bookkeeping, financial reporting, tax preparation, real-time monitoring, compliance management, financial advisory, business finance, ai technology"
+        ogImage="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png"
       />
+      
       <Header />
       
       <main className="md:pt-[160px] pt-[80px] pb-16">
