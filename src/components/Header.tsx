@@ -12,7 +12,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Link to="/">
-              <img src="/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png" alt="AI Bookkeeping" className="h-[48.75px] w-[225px] object-contain" />
+              <img src="/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png" alt="AI Bookkeeping" className="h-[39px] w-[180px] object-contain" />
             </Link>
           </div>
           
