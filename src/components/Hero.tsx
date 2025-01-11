@@ -5,23 +5,29 @@ export const Hero = () => {
   return (
     <div className="md:pt-[160px] pt-[80px] pb-20 px-4 relative overflow-hidden bg-[#121212]">
       {/* Background Icons */}
-      <div className="absolute inset-0 z-0 opacity-[0.15]">
-        <Brain className="absolute top-1/4 left-1/4 w-36 h-36 animate-float text-primary" />
-        <CircuitBoard className="absolute top-1/3 right-1/4 w-48 h-48 animate-float [animation-delay:2s] text-primary" />
-        <Microchip className="absolute bottom-1/4 left-1/3 w-52 h-52 animate-float [animation-delay:4s] text-primary" />
-        <Brain className="absolute bottom-1/3 right-1/3 w-36 h-36 animate-float [animation-delay:1s] text-primary" />
-        <CircuitBoard className="absolute top-1/2 left-1/2 w-48 h-48 animate-float [animation-delay:3s] text-primary" />
+      <div className="fixed inset-0 z-0 opacity-[0.15]" style={{ contain: 'strict' }}>
+        <Brain className="fixed top-1/4 left-1/4 w-36 h-36 animate-float text-primary" />
+        <CircuitBoard className="fixed top-1/3 right-1/4 w-48 h-48 animate-float [animation-delay:2s] text-primary" />
+        <Microchip className="fixed bottom-1/4 left-1/3 w-52 h-52 animate-float [animation-delay:4s] text-primary" 
+          style={{ 
+            width: '52px', 
+            height: '52px',
+            contain: 'size layout'
+          }} 
+        />
+        <Brain className="fixed bottom-1/3 right-1/3 w-36 h-36 animate-float [animation-delay:1s] text-primary" />
+        <CircuitBoard className="fixed top-1/2 left-1/2 w-48 h-48 animate-float [animation-delay:3s] text-primary" />
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#121212]/80 to-[#121212] z-10" />
+      <div className="fixed inset-0 bg-gradient-to-b from-transparent via-[#121212]/80 to-[#121212] z-10" />
 
       <div className="container mx-auto relative z-20">
         <div className="max-w-3xl mx-auto text-center">
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/20 blur-xl opacity-50 -z-10" />
             <h1 
-              className="text-4xl md:text-6xl font-bold mb-6 font-oxanium leading-tight content-visibility-auto"
+              className="text-4xl md:text-6xl font-bold mb-6 font-oxanium leading-tight"
               style={{
                 containIntrinsicSize: '0 60px',
                 contentVisibility: 'auto'
