@@ -2,10 +2,16 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart3, BookOpen, Calculator, Clock, FileSpreadsheet, Shield } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const Services = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
+      <SEO 
+        title="Services - AI Bookkeeping - Placeholder Title"
+        description="Placeholder description for the services page"
+        keywords="placeholder, keywords, for, services, page"
+      />
       <Header />
       
       <main className="md:pt-[160px] pt-[80px] pb-16">
