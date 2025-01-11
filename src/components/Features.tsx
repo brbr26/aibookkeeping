@@ -25,9 +25,22 @@ const features = [
 
 export const Features = () => {
   return (
-    <section id="features" className="py-20 bg-[#121212]">
+    <section 
+      id="features" 
+      className="py-20 bg-[#121212]"
+      style={{
+        containIntrinsicSize: '0 600px',
+        contentVisibility: 'auto'
+      }}
+    >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12 font-oxanium">
+        <h2 
+          className="text-4xl md:text-5xl font-bold text-center text-white mb-12 font-oxanium"
+          style={{
+            containIntrinsicSize: '0 60px',
+            contentVisibility: 'auto'
+          }}
+        >
           Why Choose AI Bookkeeping?
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -38,15 +51,23 @@ export const Features = () => {
                         bg-gradient-to-br from-[#1A1A1A] via-[#220F50]/80 to-[#1A1A1A]
                         border border-primary/20 hover:border-primary/40
                         transform hover:-translate-y-1 group"
+              style={{
+                minHeight: '280px',
+                containIntrinsicSize: '0 280px',
+                contentVisibility: 'auto'
+              }}
             >
-              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 
-                            group-hover:bg-primary/20 transition-colors duration-300">
+              <div 
+                className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 
+                          group-hover:bg-primary/20 transition-colors duration-300"
+                style={{ minHeight: '56px' }}
+              >
                 <feature.icon className="h-7 w-7 text-[#4E94F4] group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-semibold text-[#4E94F4] mb-4 font-oxanium">
+              <h3 className="text-xl font-semibold text-[#4E94F4] mb-4 font-oxanium min-h-[28px]">
                 {feature.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed min-h-[72px]">
                 {feature.description}
               </p>
             </div>
