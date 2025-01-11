@@ -23,7 +23,7 @@ export const Header = () => {
             <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato">Pricing</a>
             <a href="#resources" className="text-white hover:text-primary transition-colors font-lato mr-6">Resources</a>
             <Button 
-              className="w-32 group bg-gradient-to-r from-[#4E94F4] to-[#D946EF] hover:from-[#4E94F4] hover:to-[#C026D3] text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
+              className="w-32 group bg-[#4E94F4] hover:bg-[#4E94F4]/90 text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
             >
               Get Started
             </Button>
@@ -47,7 +47,7 @@ export const Header = () => {
               <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato">Pricing</a>
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato">Resources</a>
               <Button 
-                className="w-full group bg-gradient-to-r from-[#4E94F4] to-[#D946EF] hover:from-[#4E94F4] hover:to-[#C026D3] text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
+                className="w-full group bg-[#4E94F4] hover:bg-[#4E94F4]/90 text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
               >
                 Get Started
               </Button>
