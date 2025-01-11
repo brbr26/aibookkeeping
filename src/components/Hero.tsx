@@ -19,7 +19,7 @@ export const Hero = () => {
             <span className="text-white">Smart Bookkeeping</span>,{" "}
             <span className="text-primary">Powered by AI</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-white mb-8">
             Streamline your financial operations with AI-powered bookkeeping. Save time, reduce errors, and gain valuable insights into your business finances.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
