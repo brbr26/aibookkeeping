@@ -21,7 +21,8 @@ export const Header = () => {
             <a href="#features" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our features">Features</a>
             <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
             <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our pricing">Pricing</a>
-            <a href="#resources" className="text-white hover:text-primary transition-colors font-lato mr-6" aria-label="View our resources">Resources</a>
+            <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
+            <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
             <Button 
               className="w-32 group bg-[#2A1364] hover:bg-[#3B1D8F] text-white shadow-lg shadow-[#2A1364]/25 hover:shadow-[#2A1364]/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
               aria-label="Get started with AI Bookkeeping"
@@ -49,6 +50,7 @@ export const Header = () => {
               <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
               <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our pricing">Pricing</a>
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
+              <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
               <Button 
                 className="w-full group bg-[#2A1364] hover:bg-[#3B1D8F] text-white shadow-lg shadow-[#2A1364]/25 hover:shadow-[#2A1364]/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
                 aria-label="Get started with AI Bookkeeping"
