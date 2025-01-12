@@ -4,7 +4,7 @@ import { componentTagger } from "lovable-tagger";
 import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
-  plugins: [react(), componentTagger],
+  plugins: [react(), componentTagger()],
   server: {
     host: "0.0.0.0",
     port: 8080
