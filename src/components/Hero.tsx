@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Brain, CircuitBoard, Microchip } from "lucide-react";
+import { Brain, CircuitBoard, Microchip } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -40,14 +40,7 @@ export const Hero = () => {
           >
             Streamline your financial operations with AI-powered bookkeeping. Save time, reduce errors, and gain valuable insights into your business finances.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="group bg-[#2A1364] hover:bg-[#3B1D8F] text-white shadow-lg shadow-[#2A1364]/25 hover:shadow-[#2A1364]/40 transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto font-medium text-lg py-6"
-            >
-              Get Started Free
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
+          <div className="flex justify-center items-center">
             <Button 
               size="lg" 
               variant="outline" 
