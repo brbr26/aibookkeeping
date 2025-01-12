@@ -3,11 +3,11 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 import react from "@vitejs/plugin-react-swc";
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   plugins: [react(), componentTagger],
   server: {
     host: "0.0.0.0",
-    port: 3000
+    port: 8080
   },
   resolve: {
     alias: {
@@ -29,4 +29,4 @@ export default defineConfig(({ mode }) => ({
     },
     chunkSizeWarningLimit: 1000
   }
-}));
+});
