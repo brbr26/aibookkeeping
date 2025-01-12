@@ -22,7 +22,7 @@ const Services = () => {
             Comprehensive{" "}
             <span className="relative">
               <span className="absolute -inset-1 bg-gradient-to-r from-[#E5DEFF] via-[#D3E4FD] to-[#F1F0FB] blur-lg opacity-30"></span>
-              <span className="relative text-[#2A1364] font-oxanium">AI-Powered</span>
+              <span className="relative text-[#4E94F4] font-oxanium">AI-Powered</span>
             </span>{" "}
             Finance Services to Streamline Your Business
           </h1>
