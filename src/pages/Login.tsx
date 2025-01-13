@@ -35,7 +35,7 @@ const Login = () => {
         </h2>
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md px-4 sm:px-0">
         <div className="bg-[#1A1A1A] py-8 px-4 shadow-xl shadow-black/20 sm:rounded-lg sm:px-10 border border-primary/20">
           {error && (
             <Alert variant="destructive" className="mb-4">
