@@ -57,6 +57,9 @@ export default defineConfig({
     port: 8080,
     strictPort: true,
     host: true,
-    cors: true
+    cors: true,
+    headers: {
+      'Cache-Control': 'no-store'
+    }
   }
 });
