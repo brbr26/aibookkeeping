@@ -27,7 +27,7 @@ const Login = () => {
           <img
             src="/lovable-uploads/a6dbee86-3d1c-4a4c-ba9b-2d6683db259b.png"
             alt="AI Bookkeeping Logo"
-            className="mx-auto h-14 w-auto mb-8"
+            className="mx-auto h-[17.5rem] w-auto mb-8"
           />
         </Link>
         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-white font-oxanium">
