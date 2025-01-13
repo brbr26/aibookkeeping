@@ -26,7 +26,7 @@ const Login = () => {
         <img
           src="/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png"
           alt="AI Bookkeeping Logo"
-          className="mx-auto h-20 w-auto mb-8"
+          className="mx-auto h-14 w-auto mb-8"
         />
         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-white font-oxanium">
           Sign in to your account
