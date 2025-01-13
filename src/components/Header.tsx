@@ -24,7 +24,7 @@ export const Header = () => {
             <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
             <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
             <Button 
-              className="w-32 group bg-[#2A1364] hover:bg-[#3B1D8F] text-white shadow-lg shadow-[#2A1364]/25 hover:shadow-[#2A1364]/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
+              className="bg-[#8B5CF6] text-white hover:bg-[#7C3AED] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#8B5CF6]/25 font-medium"
               aria-label="Get started with AI Bookkeeping"
             >
               Get Started
@@ -52,7 +52,7 @@ export const Header = () => {
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
               <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
               <Button 
-                className="w-full group bg-[#2A1364] hover:bg-[#3B1D8F] text-white shadow-lg shadow-[#2A1364]/25 hover:shadow-[#2A1364]/40 transform hover:-translate-y-0.5 transition-all duration-200 font-medium"
+                className="bg-[#8B5CF6] text-white hover:bg-[#7C3AED] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#8B5CF6]/25 font-medium w-full"
                 aria-label="Get started with AI Bookkeeping"
               >
                 Get Started
