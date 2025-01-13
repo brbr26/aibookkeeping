@@ -52,9 +52,9 @@ const Login = () => {
                   colors: {
                     brand: '#4E94F4',
                     brandAccent: '#85C1FF',
-                    inputBackground: '#2A1364',
-                    inputText: 'white',
-                    inputPlaceholder: '#9CA3AF',
+                    inputBackground: '#FFFFFF',
+                    inputText: '#121212',
+                    inputPlaceholder: '#666666',
                     inputBorder: 'transparent',
                     dividerBackground: '#2A1364',
                     messageText: 'white',
@@ -79,7 +79,7 @@ const Login = () => {
                 container: 'font-lato',
                 label: 'font-oxanium text-sm font-medium text-gray-300',
                 button: 'font-oxanium bg-[#2A1364] hover:bg-[#3B1D8F] text-white w-full py-3 rounded-md transition-colors duration-200',
-                input: 'font-lato bg-[#2A1364] border-primary/20 text-white placeholder-gray-400',
+                input: 'font-lato bg-white border-primary/20 text-[#121212] placeholder-gray-400',
               },
             }}
             theme="dark"
