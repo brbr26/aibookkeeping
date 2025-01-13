@@ -55,8 +55,12 @@ const Login = () => {
                     inputBackground: '#2A1364',
                     inputText: 'white',
                     inputPlaceholder: '#9CA3AF',
-                    backgroundSecondary: '#1A1A1A',
-                    backgroundPrimary: '#1A1A1A',
+                    inputBorder: 'transparent',
+                    dividerBackground: '#2A1364',
+                    messageText: 'white',
+                    messageTextDanger: '#ef4444',
+                    anchorTextColor: '#4E94F4',
+                    anchorTextHoverColor: '#85C1FF'
                   },
                   fonts: {
                     bodyFontFamily: `Lato, sans-serif`,
