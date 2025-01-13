@@ -9,10 +9,6 @@ export const Hero = () => {
         contentVisibility: 'auto'
       }}
     >
-      {/* Decorative gradient orbs */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-float"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full filter blur-3xl animate-float delay-1000"></div>
-      
       <div className="container mx-auto relative z-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 
