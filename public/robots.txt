@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /services
+Allow: /login
+Sitemap: https://lovable.dev/sitemap.xml
