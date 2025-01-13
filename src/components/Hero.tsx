@@ -3,7 +3,13 @@ import { Brain, CircuitBoard, Microchip } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <div className="md:pt-[160px] pt-[80px] pb-20 px-4 relative overflow-hidden bg-[#121212]">
+    <div 
+      className="md:pt-[160px] pt-[80px] pb-20 px-4 relative overflow-hidden bg-[#121212] min-h-[600px]"
+      style={{
+        containIntrinsicSize: '0 600px',
+        contentVisibility: 'auto'
+      }}
+    >
       {/* Background Icons */}
       <div className="absolute inset-0 z-0 opacity-[0.15]">
         <Brain className="absolute top-1/4 left-1/4 w-36 h-36 animate-float text-primary" />
@@ -18,10 +24,10 @@ export const Hero = () => {
 
       <div className="container mx-auto relative z-20">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="relative">
+          <div className="relative min-h-[120px]">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/20 blur-xl opacity-50 -z-10" />
             <h1 
-              className="text-4xl md:text-6xl font-bold mb-6 font-oxanium leading-tight content-visibility-auto"
+              className="text-4xl md:text-6xl font-bold mb-6 font-oxanium leading-tight"
               style={{
                 containIntrinsicSize: '0 60px',
                 contentVisibility: 'auto'
@@ -32,7 +38,7 @@ export const Hero = () => {
             </h1>
           </div>
           <p 
-            className="text-lg md:text-xl text-white mb-12 leading-relaxed max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-white mb-12 leading-relaxed max-w-2xl mx-auto min-h-[48px]"
             style={{
               containIntrinsicSize: '0 48px',
               contentVisibility: 'auto'
@@ -40,7 +46,7 @@ export const Hero = () => {
           >
             Streamline your financial operations with AI-powered bookkeeping. Save time, reduce errors, and gain valuable insights into your business finances.
           </p>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center min-h-[60px]">
             <Button 
               size="lg" 
               variant="outline" 
