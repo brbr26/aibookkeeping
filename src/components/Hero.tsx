@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
   return (
     <div 
-      className="md:pt-[160px] pt-[120px] pb-20 px-2 min-h-[600px] relative overflow-hidden bg-gradient-to-br from-[#121212] to-[#1a1a1a]"
+      className="md:pt-[160px] pt-[120px] pb-20 px-2 min-h-[600px] relative overflow-hidden bg-[#121212]"
       style={{
         containIntrinsicSize: '0 600px',
         contentVisibility: 'auto'
