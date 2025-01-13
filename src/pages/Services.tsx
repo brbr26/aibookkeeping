@@ -19,12 +19,11 @@ const Services = () => {
       <main className="md:pt-[160px] pt-[80px] pb-16">
         <section className="container mx-auto px-4 text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-oxanium text-white mb-6 font-extrabold">
-            Comprehensive{" "}
+            Our{" "}
             <span className="relative">
               <span className="absolute -inset-1 bg-gradient-to-r from-[#E5DEFF] via-[#D3E4FD] to-[#F1F0FB] blur-lg opacity-30"></span>
-              <span className="relative text-[#4E94F4] font-oxanium">AI-Powered</span>
-            </span>{" "}
-            Finance Services to Streamline Your Business
+              <span className="relative text-[#4E94F4] font-oxanium">Services</span>
+            </span>
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto font-lato">
             Leverage cutting-edge AI technology to streamline your bookkeeping processes and gain valuable business insights.
