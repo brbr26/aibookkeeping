@@ -13,7 +13,7 @@ export const Hero = () => {
       <div className="container mx-auto relative z-20">
         <div className="max-w-5xl mx-auto text-center">
           <h1 
-            className="animate-fade-in-up text-[32px] md:text-6xl font-bold mb-8 font-oxanium leading-[1.0] md:leading-[1.0] tracking-tight mx-0"
+            className="animate-fade-in-up text-[34px] md:text-6xl font-bold mb-8 font-oxanium leading-[1.0] md:leading-[1.0] tracking-tight mx-0"
             style={{
               containIntrinsicSize: '0 60px',
               contentVisibility: 'auto'
