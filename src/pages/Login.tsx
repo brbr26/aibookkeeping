@@ -3,7 +3,7 @@ import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { supabase } from "@/integrations/supabase/client";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, ArrowRight } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const Login = () => {
@@ -79,8 +79,9 @@ const Login = () => {
               className: {
                 container: 'font-lato',
                 label: 'font-oxanium text-sm font-medium text-gray-300',
-                button: 'font-oxanium bg-[#7C3AED] hover:bg-[#6D28D9] text-white w-full py-3 rounded-md transition-colors duration-200',
+                button: 'font-oxanium bg-[#7C3AED] hover:bg-[#6D28D9] text-white w-full py-3 rounded-md transition-colors duration-200 text-lg font-bold flex items-center justify-center gap-2',
                 input: 'font-lato bg-white border-primary/20 text-[#121212] placeholder-gray-400',
+                anchor: 'text-white hover:text-gray-200',
               },
             }}
             theme="dark"
