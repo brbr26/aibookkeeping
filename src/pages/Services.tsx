@@ -16,7 +16,7 @@ const Services = () => {
       
       <Header />
       
-      <main className="md:pt-[160px] pt-[80px] pb-16">
+      <main className="pt-[80px] md:pt-[160px] pb-16">
         <section className="container mx-auto px-4 text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-oxanium text-white mb-6 font-extrabold">
             Our{" "}
