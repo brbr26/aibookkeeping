@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
   return (
     <div 
-      className="md:pt-[160px] pt-[120px] pb-20 px-4 min-h-[600px] relative overflow-hidden bg-gradient-to-br from-[#121212] to-[#1a1a1a]"
+      className="md:pt-[160px] pt-[120px] pb-20 px-2 min-h-[600px] relative overflow-hidden bg-gradient-to-br from-[#121212] to-[#1a1a1a]"
       style={{
         containIntrinsicSize: '0 600px',
         contentVisibility: 'auto'
@@ -14,7 +14,7 @@ export const Hero = () => {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full filter blur-3xl animate-float delay-1000"></div>
       
       <div className="container mx-auto relative z-20">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <h1 
             className="animate-fade-in-up text-4xl md:text-6xl font-bold mb-8 font-oxanium leading-tight tracking-tight mx-2 md:mx-4"
             style={{
