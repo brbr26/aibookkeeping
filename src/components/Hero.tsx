@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
   return (
     <div 
-      className="md:pt-[160px] pt-[80px] pb-20 px-4 bg-[#121212] min-h-[600px] relative overflow-hidden"
+      className="md:pt-[160px] pt-[120px] pb-20 px-4 bg-[#121212] min-h-[600px] relative overflow-hidden"
       style={{
         containIntrinsicSize: '0 600px',
         contentVisibility: 'auto'
@@ -24,7 +24,7 @@ export const Hero = () => {
             </h1>
           </div>
           <p 
-            className="text-lg md:text-xl text-white mb-12 leading-relaxed max-w-2xl mx-auto min-h-[48px]"
+            className="text-base md:text-xl text-white mb-12 leading-relaxed max-w-2xl mx-auto min-h-[48px]"
             style={{
               containIntrinsicSize: '0 48px',
               contentVisibility: 'auto'
