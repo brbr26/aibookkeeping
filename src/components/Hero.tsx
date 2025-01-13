@@ -12,15 +12,40 @@ export const Hero = () => {
       <div className="container mx-auto relative z-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 
-            className="animate-fade-in-up text-4xl md:text-6xl font-bold mb-8 font-oxanium leading-tight tracking-tight mx-2 md:mx-4"
+            className="animate-fade-in-up text-4xl md:text-6xl font-bold mb-8 font-oxanium leading-[1.4] tracking-tight mx-2 md:mx-4"
             style={{
               containIntrinsicSize: '0 60px',
               contentVisibility: 'auto'
             }}
           >
             <span className="text-white/90 font-oxanium block">Smarter Bookkeeping</span>
-            <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text font-oxanium block">Powered by AI</span>
-            <span className="text-white/90 font-oxanium">—Make Better Business Decisions...Fast</span>
+            <span className="relative inline-block">
+              <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text font-oxanium block">
+                Powered by AI
+              </span>
+              <svg
+                className="absolute w-full h-4 left-0 -bottom-2"
+                viewBox="0 0 200 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 7C50 7 50 13 100 13C150 13 150 7 200 7"
+                  stroke="url(#underline-gradient)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  style={{ vectorEffect: 'non-scaling-stroke' }}
+                />
+                <defs>
+                  <linearGradient id="underline-gradient" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#7C3AED" />
+                    <stop offset="1" stopColor="#9F7AEA" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span className="text-white/90 font-oxanium block mt-2">—Make Better Business Decisions...Fast</span>
           </h1>
           
           <p 
