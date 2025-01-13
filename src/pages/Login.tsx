@@ -51,8 +51,8 @@ const Login = () => {
               variables: {
                 default: {
                   colors: {
-                    brand: '#4E94F4',
-                    brandAccent: '#85C1FF',
+                    brand: '#7C3AED',
+                    brandAccent: '#6D28D9',
                     inputBackground: '#FFFFFF',
                     inputText: '#121212',
                     inputPlaceholder: '#666666',
@@ -60,8 +60,8 @@ const Login = () => {
                     dividerBackground: '#2A1364',
                     messageText: 'white',
                     messageTextDanger: '#ef4444',
-                    anchorTextColor: '#4E94F4',
-                    anchorTextHoverColor: '#85C1FF'
+                    anchorTextColor: '#FFFFFF',
+                    anchorTextHoverColor: '#E5E7EB'
                   },
                   fonts: {
                     bodyFontFamily: `Lato, sans-serif`,
@@ -79,7 +79,7 @@ const Login = () => {
               className: {
                 container: 'font-lato',
                 label: 'font-oxanium text-sm font-medium text-gray-300',
-                button: 'font-oxanium bg-[#2A1364] hover:bg-[#3B1D8F] text-white w-full py-3 rounded-md transition-colors duration-200',
+                button: 'font-oxanium bg-[#7C3AED] hover:bg-[#6D28D9] text-white w-full py-3 rounded-md transition-colors duration-200',
                 input: 'font-lato bg-white border-primary/20 text-[#121212] placeholder-gray-400',
               },
             }}
