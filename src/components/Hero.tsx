@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
   return (
     <div 
-      className="md:pt-[160px] pt-[80px] pb-20 px-4 relative overflow-hidden bg-[#121212] min-h-[600px]"
+      className="md:pt-[160px] pt-[80px] pb-20 px-4 bg-[#121212] min-h-[600px] relative overflow-hidden"
       style={{
         containIntrinsicSize: '0 600px',
         contentVisibility: 'auto'
@@ -11,8 +11,7 @@ export const Hero = () => {
     >
       <div className="container mx-auto relative z-20">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="relative min-h-[120px]">
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/20 blur-xl opacity-50 -z-10" />
+          <div className="relative min-h-[120px] md:before:absolute md:before:-inset-1 md:before:bg-gradient-to-r md:before:from-primary/20 md:before:to-primary-light/20 md:before:blur-xl md:before:opacity-50 md:before:-z-10">
             <h1 
               className="text-4xl md:text-6xl font-bold mb-6 font-oxanium leading-tight"
               style={{
