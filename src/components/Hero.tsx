@@ -19,10 +19,10 @@ export const Hero = () => {
             }}
           >
             <span className="text-white/90 font-oxanium block">Simplifies Business</span>
-            <span className="text-white/90 font-oxanium block">Finances with</span>
+            <span className="text-white/90 font-oxanium block">Finance with</span>
             <span className="relative block">
               <span className="text-[#9F7AEA] font-oxanium">Advanced AI</span>
-              <span className="text-white/90 font-oxanium"> and</span>
+              <span className="text-white/90 font-oxanium"> &</span>
             </span>
             <span className="text-white/90 font-oxanium block">Machine Learning</span>
           </h1>
