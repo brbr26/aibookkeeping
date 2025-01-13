@@ -32,20 +32,14 @@ export const Hero = () => {
               >
                 <path
                   d="M0 7C50 7 50 13 100 13C150 13 150 7 200 7"
-                  stroke="url(#underline-gradient)"
-                  strokeWidth="2"
+                  stroke="white"
+                  strokeWidth="3"
                   strokeLinecap="round"
                   style={{ vectorEffect: 'non-scaling-stroke' }}
                 />
-                <defs>
-                  <linearGradient id="underline-gradient" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#7C3AED" />
-                    <stop offset="1" stopColor="#9F7AEA" />
-                  </linearGradient>
-                </defs>
               </svg>
             </span>
-            <span className="text-white/90 font-oxanium block mt-2">—Make Better Business Decisions...Fast</span>
+            <span className="text-white/90 font-oxanium block mt-2">—Make Better Decisions...Fast</span>
           </h1>
           
           <p 
