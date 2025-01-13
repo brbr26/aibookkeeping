@@ -45,7 +45,12 @@ export default defineConfig({
   },
   optimizeDeps: {
     esbuildOptions: {
-      target: 'esnext'
+      target: 'esnext',
+      supported: {
+        'top-level-await': true,
+        'dynamic-import': true,
+        'import-meta': true
+      }
     }
   }
 });
