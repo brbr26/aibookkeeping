@@ -22,7 +22,7 @@ const Services = () => {
             Our{" "}
             <span className="relative">
               <span className="absolute -inset-1 bg-gradient-to-r from-[#E5DEFF] via-[#D3E4FD] to-[#F1F0FB] blur-lg opacity-30"></span>
-              <span className="relative text-[#4E94F4] font-oxanium">Services</span>
+              <span className="relative bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text font-oxanium">Services</span>
             </span>
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto font-lato">
