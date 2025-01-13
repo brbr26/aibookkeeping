@@ -12,7 +12,11 @@ export default defineConfig({
     hmr: {
       protocol: 'wss',
       clientPort: 443
-    }
+    },
+    fs: {
+      strict: true,
+    },
+    middlewareMode: false
   },
   resolve: {
     alias: {
