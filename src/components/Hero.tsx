@@ -18,13 +18,13 @@ export const Hero = () => {
               contentVisibility: 'auto'
             }}
           >
-            <span className="text-white/90 font-oxanium block">Smarter Bookkeeping</span>
+            <span className="text-white/90 font-oxanium block">Simplifies Business</span>
+            <span className="text-white/90 font-oxanium block">Finances with</span>
             <span className="relative block">
-              <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text font-oxanium">
-                Powered by AI
-              </span>
+              <span className="text-[#9F7AEA] font-oxanium">Advanced AI</span>
+              <span className="text-white/90 font-oxanium"> and</span>
             </span>
-            <span className="text-white/90 font-oxanium block mt-1">—Make Better Decisions...Fast</span>
+            <span className="text-white/90 font-oxanium block">Machine Learning</span>
           </h1>
           
           <p 
