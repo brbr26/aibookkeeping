@@ -22,7 +22,13 @@ export const Header = () => {
             <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
             <a href="#industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</a>
             <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
-            <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
+            <Link 
+              to="/login" 
+              className="px-4 py-2 bg-[#121212] text-white border border-white rounded-md hover:bg-[#1a1a1a] transition-colors font-lato"
+              aria-label="Login to your account"
+            >
+              Login
+            </Link>
             <Button 
               className="bg-[#7C3AED] text-white hover:bg-[#6D28D9] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#7C3AED]/25 font-medium"
               aria-label="Get started with AI Bookkeeping"
@@ -50,7 +56,13 @@ export const Header = () => {
               <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
               <a href="#industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</a>
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
-              <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
+              <Link 
+                to="/login" 
+                className="px-4 py-2 bg-[#121212] text-white border border-white rounded-md hover:bg-[#1a1a1a] transition-colors font-lato text-center"
+                aria-label="Login to your account"
+              >
+                Login
+              </Link>
               <Button 
                 className="bg-[#7C3AED] text-white hover:bg-[#6D28D9] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#7C3AED]/25 font-medium w-full"
                 aria-label="Get started with AI Bookkeeping"
