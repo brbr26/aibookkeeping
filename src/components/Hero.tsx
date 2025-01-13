@@ -31,7 +31,7 @@ export const Hero = () => {
                 preserveAspectRatio="none"
               >
                 <path
-                  d="M0 7C50 7 50 13 100 13C150 13 150 7 200 7"
+                  d="M0 13C50 13 50 2 100 2C150 2 150 13 200 13"
                   stroke="white"
                   strokeWidth="3"
                   strokeLinecap="round"
