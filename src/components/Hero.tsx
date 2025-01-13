@@ -23,21 +23,6 @@ export const Hero = () => {
               <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text font-oxanium block">
                 Powered by AI
               </span>
-              <svg
-                className="absolute w-full h-4 left-0 -bottom-2"
-                viewBox="0 0 200 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M0 13C50 13 50 2 100 2C150 2 150 13 200 13"
-                  stroke="white"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  style={{ vectorEffect: 'non-scaling-stroke' }}
-                />
-              </svg>
             </span>
             <span className="text-white/90 font-oxanium block mt-2">—Make Better Decisions...Fast</span>
           </h1>
