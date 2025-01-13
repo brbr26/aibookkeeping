@@ -53,7 +53,6 @@ export default defineConfig({
       }
     }
   },
-  // Add this section to handle client-side routing
   preview: {
     port: 8080,
     strictPort: true,
