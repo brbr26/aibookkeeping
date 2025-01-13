@@ -21,7 +21,7 @@ export const Hero = () => {
               }}
             >
               <span className="text-white font-oxanium">Smarter Bookkeeping, Better Business Decisions,</span>{" "}
-              <span className="text-[#4E94F4] font-oxanium">Powered by AI</span>
+              <span className="text-[#7C3AED] font-oxanium">Powered by AI</span>
             </h1>
           </div>
           <p 
