@@ -23,15 +23,14 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-[#121212] flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
+        <img
+          src="/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png"
+          alt="AI Bookkeeping Logo"
+          className="mx-auto h-20 w-auto mb-8"
+        />
         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-white font-oxanium">
           Sign in to your account
         </h2>
-        <p className="mt-2 text-center text-sm text-gray-400 font-lato">
-          Or{" "}
-          <a href="#" className="font-medium text-[#4E94F4] hover:text-[#85C1FF]">
-            start your 14-day free trial
-          </a>
-        </p>
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
