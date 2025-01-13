@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -40,9 +41,10 @@ export const Hero = () => {
           <div className="animate-fade-in-up animation-delay-300 flex justify-center items-center min-h-[60px]">
             <Button 
               size="lg" 
-              className="relative group bg-[#7C3AED] text-white hover:bg-[#6D28D9] transition-all duration-300 transform hover:scale-105 w-full sm:w-auto font-medium text-lg py-6 shadow-lg hover:shadow-purple-500/25"
+              className="relative group bg-[#7C3AED] text-white hover:bg-[#6D28D9] transition-all duration-300 transform hover:scale-105 w-full sm:w-auto font-medium text-xl py-8 px-10 shadow-lg hover:shadow-purple-500/25 flex items-center gap-3"
             >
               Schedule Demo
+              <ArrowRight className="w-6 h-6" />
               <span className="absolute inset-0 rounded-md overflow-hidden">
                 <span className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-transparent transform -skew-x-12 group-hover:animate-shine"></span>
               </span>
