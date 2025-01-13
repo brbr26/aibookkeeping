@@ -24,7 +24,7 @@ export default defineConfig({
     },
   },
   build: {
-    target: 'esnext', // Target modern browsers
+    target: 'esnext',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -40,7 +40,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
     minify: 'esbuild',
     modulePreload: {
-      polyfill: false // Disable module preload polyfills for modern browsers
+      polyfill: false
     }
   },
   optimizeDeps: {
@@ -52,5 +52,12 @@ export default defineConfig({
         'import-meta': true
       }
     }
+  },
+  // Add this section to handle client-side routing
+  preview: {
+    port: 8080,
+    strictPort: true,
+    host: true,
+    cors: true
   }
 });
