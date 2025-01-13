@@ -24,7 +24,7 @@ export const Header = () => {
             <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
             <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
             <Button 
-              className="bg-[#8B5CF6] text-white hover:bg-[#7C3AED] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#8B5CF6]/25 font-medium"
+              className="bg-[#7C3AED] text-white hover:bg-[#6D28D9] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#7C3AED]/25 font-medium"
               aria-label="Get started with AI Bookkeeping"
             >
               Get Started
@@ -52,7 +52,7 @@ export const Header = () => {
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
               <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
               <Button 
-                className="bg-[#8B5CF6] text-white hover:bg-[#7C3AED] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#8B5CF6]/25 font-medium w-full"
+                className="bg-[#7C3AED] text-white hover:bg-[#6D28D9] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#7C3AED]/25 font-medium w-full"
                 aria-label="Get started with AI Bookkeeping"
               >
                 Get Started

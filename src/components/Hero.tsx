@@ -36,7 +36,7 @@ export const Hero = () => {
           <div className="flex justify-center items-center min-h-[60px]">
             <Button 
               size="lg" 
-              className="bg-[#8B5CF6] text-white hover:bg-[#7C3AED] transition-all duration-300 transform hover:scale-105 w-full sm:w-auto font-medium text-lg py-6 shadow-lg hover:shadow-[#8B5CF6]/25"
+              className="bg-[#7C3AED] text-white hover:bg-[#6D28D9] transition-all duration-300 transform hover:scale-105 w-full sm:w-auto font-medium text-lg py-6 shadow-lg hover:shadow-[#7C3AED]/25"
             >
               Schedule Demo
             </Button>
