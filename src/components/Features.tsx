@@ -1,4 +1,5 @@
 import { Bot, Clock, LineChart, Shield } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const features = [
   {
@@ -24,10 +25,33 @@ const features = [
 ];
 
 export const Features = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in-up');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section 
+      ref={sectionRef}
       id="features" 
-      className="py-20 bg-[#121212] min-h-[600px]"
+      className="py-20 bg-[#121212] min-h-[600px] opacity-0 translate-y-10"
       style={{
         containIntrinsicSize: '0 600px',
         contentVisibility: 'auto'
