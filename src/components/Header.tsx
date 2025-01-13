@@ -20,7 +20,7 @@ export const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our features">Features</a>
             <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
-            <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our pricing">Pricing</a>
+            <a href="#industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</a>
             <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
             <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
             <Button 
@@ -48,7 +48,7 @@ export const Header = () => {
             <div className="flex flex-col gap-4">
               <a href="#features" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our features">Features</a>
               <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
-              <a href="#pricing" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our pricing">Pricing</a>
+              <a href="#industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</a>
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
               <Link to="/login" className="text-white hover:text-primary transition-colors font-lato" aria-label="Login to your account">Login</Link>
               <Button 
