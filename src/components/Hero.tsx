@@ -20,7 +20,7 @@ export const Hero = () => {
           >
             <span className="text-white font-oxanium">Smarter Bookkeeping, </span>
             <span className="text-[#7C3AED] font-oxanium">Powered by AI</span>
-            <span className="text-white font-oxanium">—Make Better Business Decisions Fast</span>
+            <span className="text-white font-oxanium">—Make Better Decisions Fast</span>
           </h1>
           <p 
             className="text-base md:text-xl text-white mb-12 leading-relaxed max-w-2xl mx-auto min-h-[48px]"
