@@ -25,7 +25,7 @@ const Login = () => {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <Link to="/">
           <img
-            src="/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png"
+            src="/lovable-uploads/a6dbee86-3d1c-4a4c-ba9b-2d6683db259b.png"
             alt="AI Bookkeeping Logo"
             className="mx-auto h-14 w-auto mb-8"
           />
