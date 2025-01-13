@@ -79,7 +79,7 @@ const Login = () => {
               className: {
                 container: 'font-lato',
                 label: 'font-oxanium text-sm font-medium text-gray-300',
-                button: 'font-oxanium bg-[#7C3AED] hover:bg-[#6D28D9] text-white w-full py-3 rounded-md transition-colors duration-200 text-lg font-bold flex items-center justify-center gap-2',
+                button: 'font-oxanium bg-[#7C3AED] hover:bg-[#6D28D9] text-white w-full py-3 rounded-md transition-colors duration-200 text-lg font-bold flex items-center justify-center gap-2 after:content-["→"] after:ml-2 after:text-xl',
                 input: 'font-lato bg-white border-primary/20 text-[#121212] placeholder-gray-400',
                 anchor: 'text-white hover:text-gray-200',
               },
