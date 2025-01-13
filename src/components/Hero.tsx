@@ -20,7 +20,7 @@ export const Hero = () => {
           >
             <span className="text-white/90 font-oxanium block">Smarter Bookkeeping</span>
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text font-oxanium">
+              <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text font-oxanium md:block">
                 Powered by AI
               </span>
             </span>
