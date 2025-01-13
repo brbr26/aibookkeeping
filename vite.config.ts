@@ -24,6 +24,7 @@ export default defineConfig({
     },
   },
   build: {
+    target: 'esnext', // Target modern browsers
     rollupOptions: {
       output: {
         manualChunks: {
@@ -36,6 +37,15 @@ export default defineConfig({
         }
       }
     },
-    chunkSizeWarningLimit: 1000
+    chunkSizeWarningLimit: 1000,
+    minify: 'esbuild',
+    modulePreload: {
+      polyfill: false // Disable module preload polyfills for modern browsers
+    }
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      target: 'esnext'
+    }
   }
 });
