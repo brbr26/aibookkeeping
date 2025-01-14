@@ -3,6 +3,29 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 import react from "@vitejs/plugin-react-swc";
 
+// Common security headers for both server and preview
+const securityHeaders = {
+  'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
+  'X-Content-Type-Options': 'nosniff',
+  'X-Frame-Options': 'SAMEORIGIN',
+  'X-XSS-Protection': '1; mode=block',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+  // Updated CSP to allow necessary resources and frame-ancestors
+  'Content-Security-Policy': `
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.gpteng.co https://cdn.calendly.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https:;
+    connect-src 'self' wss: https://kxdkublyvozvwaolwusy.supabase.co;
+    frame-src 'self' https://calendly.com;
+    frame-ancestors 'self' https://*.lovable.app https://*.gpteng.co;
+    base-uri 'self';
+    form-action 'self'
+  `.replace(/\s+/g, ' ').trim()
+}
+
 export default defineConfig({
   plugins: [react(), componentTagger()],
   server: {
@@ -17,16 +40,7 @@ export default defineConfig({
       strict: true,
     },
     middlewareMode: false,
-    headers: {
-      // Security headers
-      'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
-      'X-Content-Type-Options': 'nosniff',
-      'X-Frame-Options': 'SAMEORIGIN', // Changed from DENY to allow iframe preview
-      'X-XSS-Protection': '1; mode=block',
-      'Referrer-Policy': 'strict-origin-when-cross-origin',
-      'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
-      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.gpteng.co https://cdn.calendly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' wss: https://kxdkublyvozvwaolwusy.supabase.co; frame-src 'self' https://calendly.com",
-    }
+    headers: securityHeaders
   },
   resolve: {
     alias: {
@@ -68,16 +82,6 @@ export default defineConfig({
     strictPort: true,
     host: true,
     cors: true,
-    headers: {
-      // Apply same security headers to preview mode
-      'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
-      'X-Content-Type-Options': 'nosniff',
-      'X-Frame-Options': 'SAMEORIGIN', // Changed from DENY to allow iframe preview
-      'X-XSS-Protection': '1; mode=block',
-      'Referrer-Policy': 'strict-origin-when-cross-origin',
-      'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
-      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.gpteng.co https://cdn.calendly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' wss: https://kxdkublyvozvwaolwusy.supabase.co; frame-src 'self' https://calendly.com",
-      'Cache-Control': 'no-store'
-    }
+    headers: securityHeaders
   }
 });
