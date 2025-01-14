@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -30,20 +30,32 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Follow us on Twitter">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Connect with us on LinkedIn">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Follow us on Facebook">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Follow us on Instagram">
-                <Instagram className="h-5 w-5" />
-              </a>
+            <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
+            <div className="space-y-3 text-gray-300">
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
+                <p>5328 Lanier Islands Pkwy., Ste. 102<br />Buford, GA 30518</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="h-5 w-5 flex-shrink-0" />
+                <a 
+                  href="tel:+14046180500" 
+                  className="hover:text-white transition-colors"
+                  aria-label="Call our office"
+                >
+                  (404) 618-0500
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="h-5 w-5 flex-shrink-0" />
+                <a 
+                  href="mailto:info@aibookkeeping.com"
+                  className="hover:text-white transition-colors"
+                  aria-label="Email us"
+                >
+                  info@aibookkeeping.com
+                </a>
+              </div>
             </div>
           </div>
         </div>
