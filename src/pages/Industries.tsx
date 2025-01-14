@@ -18,7 +18,7 @@ const Industries = () => {
         
         <div className="md:pt-[160px] pt-[120px] pb-20 px-4 relative z-10">
           <div className="container mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center font-oxanium bg-clip-text text-transparent bg-gradient-to-r from-[#D6BCFA] via-[#9F7AEA] to-[#D6BCFA]">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center font-oxanium text-[#D6BCFA]">
               Industries We Serve
             </h1>
             <p className="text-xl text-[#E9D8FD] mb-12 text-center max-w-3xl mx-auto">
