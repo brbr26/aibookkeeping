@@ -30,7 +30,7 @@ export const DemoRequestModal = ({ trigger }: DemoRequestModalProps) => {
         {trigger}
       </div>
       
-      <DialogContent className="sm:max-w-[850px] max-h-[800px] bg-[#121212] p-0">
+      <DialogContent className="sm:max-w-[850px] max-h-[800px] bg-white p-0">
         <div 
           className="calendly-inline-widget w-full" 
           data-url="https://calendly.com/bba/test-event?hide_event_type_details=1&background_color=121212&text_color=ffffff&primary_color=843eef"
