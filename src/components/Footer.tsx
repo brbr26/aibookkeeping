@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="bg-[#121212] text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-4 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-semibold text-lg mb-4">Product</h3>
             <ul className="space-y-2">
@@ -29,7 +29,7 @@ export const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="View our documentation">Documentation</a></li>
             </ul>
           </div>
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-4 md:col-span-1 lg:max-w-md">
             <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-start space-x-2">
