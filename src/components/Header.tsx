@@ -20,7 +20,7 @@ export const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our features">Features</a>
             <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
-            <a href="#industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</a>
+            <Link to="/industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</Link>
             <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
             <Link 
               to="/login" 
@@ -54,7 +54,7 @@ export const Header = () => {
             <div className="flex flex-col gap-4">
               <a href="#features" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our features">Features</a>
               <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
-              <a href="#industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</a>
+              <Link to="/industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</Link>
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
               <Link 
                 to="/login" 
