@@ -2,7 +2,7 @@ import {
   Dialog,
   DialogContent,
 } from "@/components/ui/dialog";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface DemoRequestModalProps {
   trigger: React.ReactNode;
