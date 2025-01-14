@@ -17,7 +17,7 @@ const Industries = () => {
           <div className="container mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center font-oxanium">Industries We Serve</h1>
             <p className="text-lg text-gray-300 mb-12 text-center max-w-3xl mx-auto">
-              Our AI-powered bookkeeping solutions are tailored to meet the unique financial management needs of various industries.
+              Our AI-powered bookkeeping solutions are tailored to meet the unique financial management needs of these industries:
             </p>
             <IndustriesGrid />
           </div>
