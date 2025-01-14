@@ -16,8 +16,8 @@ const Services = () => {
       
       <Header />
       
-      <main className="pt-[120px] md:pt-[160px] pb-16">
-        <section className="container mx-auto px-4 text-center mb-16">
+      <main className="container mx-auto px-4">
+        <section className="pt-32 md:pt-40 pb-16 text-center">
           <h1 className="text-4xl md:text-6xl font-oxanium text-white mb-6 font-extrabold">
             Our{" "}
             <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text font-oxanium">
