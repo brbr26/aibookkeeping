@@ -4,8 +4,8 @@ export const Footer = () => {
   return (
     <footer className="bg-[#121212] text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div className="md:col-span-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="sm:col-span-1">
             <h3 className="font-semibold text-lg mb-4">Product</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Learn about our features">Features</a></li>
@@ -13,7 +13,7 @@ export const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Read about our security measures">Security</a></li>
             </ul>
           </div>
-          <div className="md:col-span-3">
+          <div className="sm:col-span-1">
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Learn about our company">About</a></li>
@@ -21,7 +21,7 @@ export const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Contact our team">Contact</a></li>
             </ul>
           </div>
-          <div className="md:col-span-3">
+          <div className="sm:col-span-1">
             <h3 className="font-semibold text-lg mb-4">Resources</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Read our blog posts">Blog</a></li>
@@ -29,7 +29,7 @@ export const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="View our documentation">Documentation</a></li>
             </ul>
           </div>
-          <div className="md:col-span-3">
+          <div className="sm:col-span-2 lg:col-span-1">
             <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-start space-x-2">
