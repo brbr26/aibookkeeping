@@ -5,7 +5,7 @@ import { IndustriesGrid } from "@/components/industries/IndustriesGrid";
 
 const Industries = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#121212]">
       <SEO 
         title="Industries We Serve | AI Bookkeeping"
         description="AI Bookkeeping serves various industries including E-commerce, Law Firms, Healthcare, and more with tailored financial management solutions."
