@@ -7,16 +7,9 @@ interface IndustryCardProps {
   image: string;
 }
 
-export const IndustryCard = ({ title, description, icon: Icon, image }: IndustryCardProps) => {
+export const IndustryCard = ({ title, description, icon: Icon }: IndustryCardProps) => {
   return (
     <div className="group relative overflow-hidden rounded-lg bg-[#1A1A1A] border border-[#2A2A2A] hover:border-primary transition-all duration-300">
-      <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
-      </div>
       <div className="relative p-6 flex flex-col items-center text-center z-10">
         <div className="p-3 bg-[#2A1364] rounded-lg mb-4">
           <Icon className="w-8 h-8 text-primary" />
