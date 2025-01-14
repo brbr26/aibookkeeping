@@ -29,7 +29,7 @@ export const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="View our documentation">Documentation</a></li>
             </ul>
           </div>
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-start space-x-2">
