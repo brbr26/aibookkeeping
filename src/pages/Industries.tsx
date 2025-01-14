@@ -13,15 +13,15 @@ const Industries = () => {
       />
       <Header />
       <main className="flex-grow relative">
-        {/* Background gradient for added depth */}
-        <div className="absolute inset-0 bg-gradient-radial from-[#2A1364]/20 via-transparent to-transparent opacity-50" />
+        {/* Enhanced background gradient for better depth */}
+        <div className="absolute inset-0 bg-gradient-radial from-[#4A2384]/30 via-[#2A1364]/20 to-transparent opacity-70" />
         
         <div className="md:pt-[160px] pt-[120px] pb-20 px-4 relative z-10">
           <div className="container mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center font-oxanium bg-clip-text text-transparent bg-gradient-to-r from-primary-light via-primary to-primary-light">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center font-oxanium bg-clip-text text-transparent bg-gradient-to-r from-[#D6BCFA] via-[#9F7AEA] to-[#D6BCFA] animate-pulse">
               Industries We Serve
             </h1>
-            <p className="text-lg text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+            <p className="text-xl text-[#E9D8FD] mb-12 text-center max-w-3xl mx-auto">
               Our AI-powered bookkeeping solutions are tailored to meet the unique financial management needs of these industries:
             </p>
             <IndustriesGrid />
