@@ -11,19 +11,18 @@ const securityHeaders = {
   'X-XSS-Protection': '1; mode=block',
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
-  // Updated CSP to be more permissive while maintaining security
+  // Updated CSP to allow necessary resources and frame-ancestors
   'Content-Security-Policy': `
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.gpteng.co https://cdn.calendly.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    font-src 'self' data: https://fonts.gstatic.com;
-    img-src 'self' data: https: blob:;
-    connect-src 'self' wss: https: http: localhost:*;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https:;
+    connect-src 'self' wss: https://kxdkublyvozvwaolwusy.supabase.co;
     frame-src 'self' https://calendly.com;
     frame-ancestors 'self' https://*.lovable.app https://*.gpteng.co;
     base-uri 'self';
-    form-action 'self';
-    worker-src 'self' blob:
+    form-action 'self'
   `.replace(/\s+/g, ' ').trim()
 }
 
