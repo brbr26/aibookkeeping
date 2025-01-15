@@ -1,101 +1,44 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { FooterSection } from "./footer/FooterSection";
+import { FooterLinkList } from "./footer/FooterLinkList";
+import { FooterContactInfo } from "./footer/FooterContactInfo";
+
+const productLinks = [
+  { href: "#", label: "Features" },
+  { href: "#", label: "Pricing" },
+  { href: "#", label: "Security" },
+];
+
+const companyLinks = [
+  { href: "#", label: "About" },
+  { href: "#", label: "Careers" },
+  { href: "#", label: "Contact" },
+];
+
+const resourceLinks = [
+  { href: "#", label: "Blog" },
+  { href: "#", label: "Help Center" },
+  { href: "#", label: "Documentation" },
+];
 
 export const Footer = () => (
   <footer className="bg-[#121212] text-white">
     <div className="container mx-auto px-8 py-12">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-        {/* Column 1 */}
-        <div className="md:col-span-2">
-          <h3 className="font-semibold text-lg mb-4 md:mb-0">Product</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Features
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Security
-              </a>
-            </li>
-          </ul>
-        </div>
+        <FooterSection title="Product">
+          <FooterLinkList links={productLinks} />
+        </FooterSection>
 
-        {/* Column 2 */}
-        <div className="md:col-span-2">
-          <h3 className="font-semibold text-lg mb-4 md:mb-0">Company</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Careers
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+        <FooterSection title="Company">
+          <FooterLinkList links={companyLinks} />
+        </FooterSection>
 
-        {/* Column 3 */}
-        <div className="md:col-span-2">
-          <h3 className="font-semibold text-lg mb-4 md:mb-0">Resources</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Help Center
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Documentation
-              </a>
-            </li>
-          </ul>
-        </div>
+        <FooterSection title="Resources">
+          <FooterLinkList links={resourceLinks} />
+        </FooterSection>
 
-        {/* Column 4 (Contact Us) */}
-        <div className="md:col-span-6">
-          <h3 className="font-semibold text-lg mb-6">Contact Us</h3>
-          <div className="space-y-4 text-gray-300">
-            <div className="flex items-start gap-3">
-              <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
-              <p>
-                5328 Lanier Islands Pkwy., Ste. 102
-                <br />
-                Buford, GA 30518
-              </p>
-            </div>
-            <div className="flex items-center gap-3">
-              <Phone className="h-5 w-5 flex-shrink-0" />
-              <a href="tel:+14046180500" className="hover:text-white transition-colors">
-                (404) 618-0500
-              </a>
-            </div>
-            <div className="flex items-center gap-3">
-              <Mail className="h-5 w-5 flex-shrink-0" />
-              <a href="mailto:info@aibookkeeping.com" className="hover:text-white transition-colors">
-                info@aibookkeeping.com
-              </a>
-            </div>
-          </div>
-        </div>
+        <FooterSection title="Contact Us" className="md:col-span-6">
+          <FooterContactInfo />
+        </FooterSection>
       </div>
 
       <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
