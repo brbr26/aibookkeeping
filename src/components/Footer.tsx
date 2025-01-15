@@ -21,7 +21,7 @@ const resourceLinks = [
 ];
 
 export const Footer = () => (
-  <footer className="w-full bg-[#121212] text-white">
+  <footer className="w-screen bg-[#121212] text-white">
     <div className="max-w-7xl mx-auto px-8 py-12">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
         <FooterSection title="Product">
