@@ -2,10 +2,10 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 export const Footer = () => (
   <footer className="bg-[#121212] text-white">
-    <div className="container mx-auto px-4 py-12">
-      <div className="grid grid-cols-12 gap-8 items-start">
+    <div className="container mx-auto px-8 py-12">
+      <div className="grid grid-cols-12 gap-8">
         {/* Column 1 */}
-        <div className="col-span-2 space-y-4">
+        <div className="col-span-2 lg:col-span-2 space-y-4">
           <h3 className="font-semibold text-lg">Product</h3>
           <ul className="space-y-2">
             <li>
@@ -27,7 +27,7 @@ export const Footer = () => (
         </div>
 
         {/* Column 2 */}
-        <div className="col-span-2 space-y-4">
+        <div className="col-span-2 lg:col-span-2 space-y-4">
           <h3 className="font-semibold text-lg">Company</h3>
           <ul className="space-y-2">
             <li>
@@ -49,7 +49,7 @@ export const Footer = () => (
         </div>
 
         {/* Column 3 */}
-        <div className="col-span-2 space-y-4">
+        <div className="col-span-2 lg:col-span-2 space-y-4">
           <h3 className="font-semibold text-lg">Resources</h3>
           <ul className="space-y-2">
             <li>
@@ -70,8 +70,8 @@ export const Footer = () => (
           </ul>
         </div>
 
-        {/* Contact Section */}
-        <div className="col-span-6">
+        {/* Column 4 */}
+        <div className="col-span-6 lg:col-span-6 space-y-4">
           <h3 className="font-semibold text-lg mb-6">Contact Us</h3>
           <div className="space-y-4 text-gray-300">
             <div className="flex items-start gap-3">
