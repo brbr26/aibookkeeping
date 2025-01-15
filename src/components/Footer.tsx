@@ -3,10 +3,10 @@ import { Mail, MapPin, Phone } from "lucide-react";
 export const Footer = () => (
   <footer className="bg-[#121212] text-white">
     <div className="container mx-auto px-8 py-12">
-      <div className="grid grid-cols-12 gap-8 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
         {/* Column 1 */}
-        <div className="col-span-2">
-          <h3 className="font-semibold text-lg">Product</h3>
+        <div className="md:col-span-2">
+          <h3 className="font-semibold text-lg mb-4 md:mb-0">Product</h3>
           <ul className="space-y-2">
             <li>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -27,8 +27,8 @@ export const Footer = () => (
         </div>
 
         {/* Column 2 */}
-        <div className="col-span-2">
-          <h3 className="font-semibold text-lg">Company</h3>
+        <div className="md:col-span-2">
+          <h3 className="font-semibold text-lg mb-4 md:mb-0">Company</h3>
           <ul className="space-y-2">
             <li>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -49,8 +49,8 @@ export const Footer = () => (
         </div>
 
         {/* Column 3 */}
-        <div className="col-span-2">
-          <h3 className="font-semibold text-lg">Resources</h3>
+        <div className="md:col-span-2">
+          <h3 className="font-semibold text-lg mb-4 md:mb-0">Resources</h3>
           <ul className="space-y-2">
             <li>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -71,7 +71,7 @@ export const Footer = () => (
         </div>
 
         {/* Column 4 (Contact Us) */}
-        <div className="col-span-6">
+        <div className="md:col-span-6">
           <h3 className="font-semibold text-lg mb-6">Contact Us</h3>
           <div className="space-y-4 text-gray-300">
             <div className="flex items-start gap-3">
