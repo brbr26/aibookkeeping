@@ -27,7 +27,7 @@ const services = [
 
 export const HomeServices = () => {
   return (
-    <section className="py-20 bg-[#1A1A1A]">
+    <section className="py-20 bg-[#121212]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 font-oxanium">
           Our{" "}
