@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// Rename these imports to something clearer if you want
 import { ScrollToTop } from "./ScrollToTop";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
