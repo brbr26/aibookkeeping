@@ -11,6 +11,25 @@ export const Hero = () => {
         contentVisibility: 'auto'
       }}
     >
+      {/* Floating Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute w-[500px] h-[500px] -top-64 -left-64 bg-gradient-to-r from-purple-500/10 to-transparent rounded-full blur-3xl animate-float"></div>
+        <div className="absolute w-[300px] h-[300px] top-32 right-32 bg-gradient-to-l from-blue-500/10 to-transparent rounded-full blur-3xl animate-float animation-delay-200"></div>
+        <div className="absolute w-[400px] h-[400px] bottom-0 left-1/2 transform -translate-x-1/2 bg-gradient-to-t from-purple-600/10 to-transparent rounded-full blur-3xl animate-float animation-delay-300"></div>
+      </div>
+
+      {/* SVG Pattern Overlay */}
+      <div className="absolute inset-0" style={{ opacity: 0.3 }}>
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(155, 135, 245, 0.2)" strokeWidth="1"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+      </div>
+
       <div className="container mx-auto relative z-20">
         <div className="max-w-5xl mx-auto text-center">
           <h1 
