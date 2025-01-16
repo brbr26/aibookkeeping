@@ -6,10 +6,18 @@ interface IndustryCardProps {
   description: string;
   icon: LucideIcon;
   image: string;
-  href?: string;
+  /** 
+   * Use 'to' instead of 'href' to match React Router naming
+   */
+  to?: string;
 }
 
-export const IndustryCard = ({ title, description, icon: Icon, href }: IndustryCardProps) => {
+export const IndustryCard = ({
+  title,
+  description,
+  icon: Icon,
+  to,
+}: IndustryCardProps) => {
   const CardContent = () => (
     <div className="relative p-8 flex flex-col items-center text-center z-10">
       <div className="p-4 bg-gradient-to-br from-[#5A3494] to-[#4A2384] rounded-xl mb-6 shadow-xl transform group-hover:scale-110 transition-all duration-500 relative">
@@ -27,11 +35,15 @@ export const IndustryCard = ({ title, description, icon: Icon, href }: IndustryC
     </div>
   );
 
-  const cardClasses = "group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#4A2384] to-[#2A1364] border border-primary/30 hover:border-primary transition-all duration-500 shadow-xl hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-2";
+  const cardClasses =
+    "group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#4A2384] to-[#2A1364] border border-primary/30 hover:border-primary transition-all duration-500 shadow-xl hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-2";
 
-  if (href) {
+  /**
+   * If 'to' is provided, render a <Link> so React Router can handle navigation.
+   */
+  if (to) {
     return (
-      <Link to={href} className={cardClasses}>
+      <Link to={to} className={cardClasses}>
         <div className="absolute inset-0 bg-gradient-to-br from-[#9F7AEA]/40 via-[#D6BCFA]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         <CardContent />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#9F7AEA]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -42,6 +54,9 @@ export const IndustryCard = ({ title, description, icon: Icon, href }: IndustryC
     );
   }
 
+  /**
+   * Otherwise, render a static card (no link).
+   */
   return (
     <div className={cardClasses}>
       <div className="absolute inset-0 bg-gradient-to-br from-[#9F7AEA]/40 via-[#D6BCFA]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
