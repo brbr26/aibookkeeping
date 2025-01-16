@@ -5,9 +5,9 @@ export const HomeIndustries = () => {
     <section className="py-20 bg-[#121212]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 font-oxanium">
-          Industries We{" "}
+          <span className="text-white">Industries</span>{" "}
           <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text">
-            Serve
+            Served
           </span>
         </h2>
         <p className="text-gray-300 text-center mb-12 max-w-2xl mx-auto">
