@@ -12,7 +12,16 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Link to="/" aria-label="Go to homepage">
-              <img src="/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png" alt="AI Bookkeeping" className="h-[39px] w-[180px] object-contain" />
+              <img 
+                src="/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png" 
+                alt="AI Bookkeeping" 
+                className="h-[39px] w-[180px] object-contain"
+                width={180}
+                height={39}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+              />
             </Link>
           </div>
           
