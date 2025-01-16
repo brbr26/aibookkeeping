@@ -9,13 +9,15 @@ const industries = [
     title: "E-commerce",
     description: "Online retailers looking to streamline financial operations.",
     icon: ShoppingCart,
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+    href: "/ecommerce"
   },
   {
     title: "Law Firms",
     description: "Small-to-medium firms needing accurate tracking of billable hours and client trust accounts.",
     icon: Scale,
-    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
+    href: "/law-firms"
   },
   {
     title: "Healthcare",
@@ -89,6 +91,7 @@ export const IndustriesGrid = () => {
           description={industry.description}
           icon={industry.icon}
           image={industry.image}
+          href={industry.href}
         />
       ))}
     </div>
