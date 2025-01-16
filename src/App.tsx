@@ -10,6 +10,8 @@ import LawFirms from "./pages/LawFirms";
 function App() {
   return (
     <Router>
+      {/* Scroll restoration helper */}
+      <ScrollToTop />
       <Routes>
         {/* Home page */}
         <Route path="/" element={<Index />} />
