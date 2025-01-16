@@ -21,29 +21,26 @@ const resourceLinks = [
 ];
 
 export const Footer = () => (
-  <footer className="relative w-full min-w-[100vw] left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] bg-[#121212] text-white">
-    <div className="container mx-auto px-8 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-        <FooterSection title="Product">
-          <FooterLinkList links={productLinks} />
-        </FooterSection>
-
-        <FooterSection title="Company">
-          <FooterLinkList links={companyLinks} />
-        </FooterSection>
-
-        <FooterSection title="Resources">
-          <FooterLinkList links={resourceLinks} />
-        </FooterSection>
-
-        <FooterSection title="Contact Us" className="md:col-span-6">
-          <FooterContactInfo />
-        </FooterSection>
-      </div>
-
-      <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} AI Bookkeeping, LLC. All rights reserved.</p>
-      </div>
+  <footer className="w-full bg-[#121212] text-white">
+  <div className="px-8 py-12">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <FooterSection title="Product">
+        <FooterLinkList links={productLinks} />
+      </FooterSection>
+      <FooterSection title="Company">
+        <FooterLinkList links={companyLinks} />
+      </FooterSection>
+      <FooterSection title="Resources">
+        <FooterLinkList links={resourceLinks} />
+      </FooterSection>
+      <FooterSection title="Contact Us">
+        <FooterContactInfo />
+      </FooterSection>
     </div>
-  </footer>
+
+    <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+      <p>&copy; {new Date().getFullYear()} AI Bookkeeping, LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 );
