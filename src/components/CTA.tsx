@@ -26,7 +26,7 @@ export const CTA = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 bg-background opacity-0 translate-y-10">
+    <section ref={sectionRef} className="py-20 bg-[#121212] opacity-0 translate-y-10">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="bg-[#7C3AED] rounded-3xl p-8 md:p-12">
           <div className="max-w-3xl mx-auto text-center">
