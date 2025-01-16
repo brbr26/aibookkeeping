@@ -18,7 +18,6 @@ export const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our features">Features</a>
             <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
             <Link to="/industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</Link>
             <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
@@ -52,7 +51,6 @@ export const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden pt-4 pb-2">
             <div className="flex flex-col gap-4">
-              <a href="#features" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our features">Features</a>
               <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
               <Link to="/industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</Link>
               <a href="#resources" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our resources">Resources</a>
