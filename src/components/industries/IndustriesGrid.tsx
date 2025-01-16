@@ -91,7 +91,7 @@ export const IndustriesGrid = () => {
           description={industry.description}
           icon={industry.icon}
           image={industry.image}
-          href={industry.href}
+          to={industry.href}
         />
       ))}
     </div>
