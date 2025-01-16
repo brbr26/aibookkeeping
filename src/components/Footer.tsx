@@ -20,33 +20,41 @@ const resourceLinks = [
   { href: "#", label: "Documentation" },
 ];
 
-export const Footer = () => (
-  <footer className="w-full bg-[#121212] text-white">
-    {/* You can remove px-8 if you truly want edge-to-edge text on large screens */}
-    <div className="px-8 py-12">
-      {/* Force a 4-column layout at md and above */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
-        <FooterSection title="Product">
-          <FooterLinkList links={productLinks} />
-        </FooterSection>
+export const Footer = () => {
+  return (
+    <footer className="w-full bg-[#121212] text-white">
+      {/* 
+        Remove or adjust `px-8` if you want it truly edge-to-edge on large screens.
+        Also make sure there’s no parent container or negative margins on this footer.
+      */}
+      <div className="px-8 py-12">
+        {/* 
+          Ensure 4 columns on md+ screens. 
+          If your screen is <768px wide, you’ll still see them stacked.
+        */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <FooterSection title="Product">
+            <FooterLinkList links={productLinks} />
+          </FooterSection>
 
-        <FooterSection title="Company">
-          <FooterLinkList links={companyLinks} />
-        </FooterSection>
+          <FooterSection title="Company">
+            <FooterLinkList links={companyLinks} />
+          </FooterSection>
 
-        <FooterSection title="Resources">
-          <FooterLinkList links={resourceLinks} />
-        </FooterSection>
+          <FooterSection title="Resources">
+            <FooterLinkList links={resourceLinks} />
+          </FooterSection>
 
-        <FooterSection title="Contact Us">
-          <FooterContactInfo />
-        </FooterSection>
+          {/* Make sure there's NO md:col-span-6 or any wrapping style here */}
+          <FooterSection title="Contact Us">
+            <FooterContactInfo />
+          </FooterSection>
+        </div>
+
+        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} AI Bookkeeping, LLC. All rights reserved.</p>
+        </div>
       </div>
-
-      {/* Footer bottom row */}
-      <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} AI Bookkeeping, LLC. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
