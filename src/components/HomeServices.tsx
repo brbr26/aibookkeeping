@@ -30,8 +30,8 @@ export const HomeServices = () => {
     <section className="py-20 bg-[#121212]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 font-oxanium">
-          <span className="text-white">Services</span>{" "}
-          <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text">
+          <span className="text-white font-oxanium">Services</span>{" "}
+          <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text font-oxanium">
             Offered
           </span>
         </h2>
