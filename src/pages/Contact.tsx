@@ -21,7 +21,7 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white font-oxanium">
               Contact Us
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
               Get in touch with our team of experts. We're here to answer your questions and help your business succeed.
             </p>
           </div>
