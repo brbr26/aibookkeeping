@@ -16,7 +16,7 @@ const Contact = () => {
       
       <main className="min-h-screen bg-[#121212]">
         {/* Hero Section */}
-        <section className="py-32 px-4">
+        <section className="pt-32 pb-16 px-4">
           <div className="container mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white font-oxanium">
               Contact Us
