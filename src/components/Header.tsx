@@ -6,7 +6,7 @@ import { ImageUpload } from "./ImageUpload";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [logoUrl, setLogoUrl] = useState("/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png");
+  const [logoUrl, setLogoUrl] = useState("/lovable-uploads/AIBookkeeping_Logo_Standard.webp");
 
   const handleLogoUpload = (url: string) => {
     setLogoUrl(url);
