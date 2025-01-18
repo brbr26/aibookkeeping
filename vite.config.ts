@@ -27,6 +27,11 @@ const securityHeaders = {
 
 export default defineConfig({
   plugins: [react(), componentTagger()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
   build: {
     target: 'esnext',
     rollupOptions: {
