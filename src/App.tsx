@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Suspense } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import { ScrollToTop } from "./ScrollToTop";
 import { Loader2 } from "lucide-react";
 
