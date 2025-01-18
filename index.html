@@ -44,21 +44,32 @@
         rel="stylesheet"
       />
     </noscript>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-17G1CCLLEX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-17G1CCLLEX');
-    </script>
     
     <title>AI Bookkeeping</title>
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Load critical scripts first -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Defer non-critical scripts -->
+    <script>
+      // Defer loading of Google Tag Manager
+      window.addEventListener('load', function() {
+        const gtmScript = document.createElement('script');
+        gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-17G1CCLLEX';
+        gtmScript.async = true;
+        document.body.appendChild(gtmScript);
+        
+        gtmScript.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-17G1CCLLEX');
+        };
+      });
+    </script>
   </body>
 </html>
