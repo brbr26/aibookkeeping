@@ -15,13 +15,15 @@ export const Header = () => {
               <img 
                 src="/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png" 
                 alt="AI Bookkeeping" 
-                className="h-[39px] w-[180px] object-contain"
+                className="h-[39px] w-[180px]"
                 width={180}
                 height={39}
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
                 style={{
+                  display: 'block',
+                  objectFit: 'contain',
                   contentVisibility: 'auto',
                   containIntrinsicSize: '180px 39px'
                 }}

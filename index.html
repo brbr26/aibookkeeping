@@ -5,30 +5,19 @@
     <link rel="icon" type="image/png" href="/lovable-uploads/6d5a9b38-8dc8-459b-ad54-655d1421f164.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Preload logo image with higher priority -->
+    <!-- Critical preloads -->
     <link 
       rel="preload" 
       as="image"
       href="/lovable-uploads/d6f370ae-2bad-47f8-9041-59ecc856d608.png"
       type="image/png"
       fetchPriority="high"
+      importance="high"
     />
     
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Preload font files -->
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap"
-    />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-    />
     
     <!-- Load fonts with display swap -->
     <link 
@@ -57,14 +46,13 @@
     </noscript>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-17G1CCLLEX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-17G1CCLLEX');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-17G1CCLLEX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-17G1CCLLEX');
+    </script>
     
     <title>AI Bookkeeping</title>
   </head>
