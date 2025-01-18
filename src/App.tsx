@@ -1,10 +1,11 @@
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route, Suspense } from "react-router-dom";
 import { ScrollToTop } from "./ScrollToTop";
 import { Loader2 } from "lucide-react";
 
-// Lazy load pages
-const Index = lazy(() => import("./pages/Index"));
+// Import Index page directly to avoid dynamic import issues
+import Index from "./pages/Index";
+
+// Lazy load other pages
 const Services = lazy(() => import("./pages/Services"));
 const Login = lazy(() => import("./pages/Login"));
 const Industries = lazy(() => import("./pages/Industries"));
@@ -19,22 +20,56 @@ const LoadingSpinner = () => (
   </div>
 );
 
+// Error boundary component
+const ErrorFallback = () => (
+  <div className="min-h-screen flex items-center justify-center">
+    <div className="text-center">
+      <h2 className="text-xl font-semibold mb-2">Oops! Something went wrong</h2>
+      <p>Please refresh the page to try again.</p>
+    </div>
+  </div>
+);
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
-          {/* Home page */}
+          {/* Home page - directly imported */}
           <Route path="/" element={<Index />} />
 
-          {/* Other pages */}
-          <Route path="/services" element={<Services />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/industries" element={<Industries />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/ecommerce" element={<Ecommerce />} />
-          <Route path="/law-firms" element={<LawFirms />} />
+          {/* Other pages - lazy loaded */}
+          <Route path="/services" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Services />
+            </Suspense>
+          } />
+          <Route path="/login" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Login />
+            </Suspense>
+          } />
+          <Route path="/industries" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Industries />
+            </Suspense>
+          } />
+          <Route path="/contact" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Contact />
+            </Suspense>
+          } />
+          <Route path="/ecommerce" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Ecommerce />
+            </Suspense>
+          } />
+          <Route path="/law-firms" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <LawFirms />
+            </Suspense>
+          } />
         </Routes>
       </Suspense>
     </Router>
