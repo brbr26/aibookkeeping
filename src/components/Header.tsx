@@ -2,15 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ImageUpload } from "./ImageUpload";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [logoUrl, setLogoUrl] = useState("/lovable-uploads/AIBookkeeping_Logo_Standard.webp");
-
-  const handleLogoUpload = (url: string) => {
-    setLogoUrl(url);
-  };
 
   return (
     <header className="fixed w-full bg-[#121212] backdrop-blur-md z-50 shadow-sm">
@@ -19,7 +13,7 @@ export const Header = () => {
           <div className="flex items-center gap-4">
             <Link to="/" aria-label="Go to homepage">
               <img 
-                src={logoUrl}
+                src="/lovable-uploads/AIBookkeeping_Logo_Standard.webp"
                 alt="AI Bookkeeping" 
                 className="h-[39px] w-[180px]"
                 width={180}
@@ -35,7 +29,6 @@ export const Header = () => {
                 }}
               />
             </Link>
-            <ImageUpload onUploadComplete={handleLogoUpload} />
           </div>
           
           <nav className="hidden md:flex items-center gap-8">
