@@ -19,13 +19,16 @@ export const Header = () => {
                 width={180}
                 height={39}
                 loading="eager"
-                fetchPriority="high"
+                fetchpriority="high"
                 decoding="async"
+                style={{
+                  contentVisibility: 'auto',
+                  containIntrinsicSize: '180px 39px'
+                }}
               />
             </Link>
           </div>
           
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <Link to="/services" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our services">Services</Link>
             <Link to="/industries" className="text-white hover:text-primary transition-colors font-lato" aria-label="View our industries">Industries</Link>
@@ -44,7 +47,7 @@ export const Header = () => {
               Get Started
             </Button>
           </nav>
-
+          
           {/* Mobile Menu Button */}
           <button 
             className="md:hidden p-2"
@@ -56,7 +59,6 @@ export const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pt-4 pb-2">
             <div className="flex flex-col gap-4">
