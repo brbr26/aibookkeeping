@@ -19,7 +19,7 @@ export const Header = () => {
                 width={180}
                 height={39}
                 loading="eager"
-                fetchpriority="high"
+                fetchPriority="high"
                 decoding="async"
                 style={{
                   contentVisibility: 'auto',
@@ -48,7 +48,6 @@ export const Header = () => {
             </Button>
           </nav>
           
-          {/* Mobile Menu Button */}
           <button 
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
