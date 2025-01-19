@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SEO } from "@/components/SEO"; // Assumes you can pass extra props for richer SEO
 import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
