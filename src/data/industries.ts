@@ -39,7 +39,8 @@ export const industries = [
     title: "Construction",
     description: "Contractors and builders managing project-based finances and payroll.",
     icon: HardHat,
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+    to: "/construction"
   },
   {
     title: "Funded Startups",

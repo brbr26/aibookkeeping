@@ -13,6 +13,7 @@ const Industries = lazy(() => import("./pages/Industries"));
 const Ecommerce = lazy(() => import("./pages/Ecommerce"));
 const LawFirms = lazy(() => import("./pages/LawFirms"));
 const Healthcare = lazy(() => import("./pages/Healthcare"));
+const Construction = lazy(() => import("./pages/Construction"));
 const Contact = lazy(() => import("./pages/Contact"));
 
 // Loading component
@@ -75,6 +76,11 @@ function App() {
           <Route path="/healthcare" element={
             <Suspense fallback={<LoadingSpinner />}>
               <Healthcare />
+            </Suspense>
+          } />
+          <Route path="/construction" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Construction />
             </Suspense>
           } />
         </Routes>
