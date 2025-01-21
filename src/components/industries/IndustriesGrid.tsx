@@ -14,10 +14,6 @@ import {
   Shield 
 } from "lucide-react";
 
-/**
- * Note how we use `to: "/ecommerce"` (rather than `href`).
- * Only the items you want linked need the `to` property.
- */
 const industries = [
   {
     title: "E-commerce",
@@ -37,71 +33,62 @@ const industries = [
     title: "Healthcare",
     description: "Dental, medical, and chiropractic practices requiring compliant and efficient financial management.",
     icon: Stethoscope,
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
-    // No `to` here => no clickable link
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    to: "/healthcare"
   },
   {
     title: "Construction",
     description: "Contractors and builders managing project-based finances and payroll.",
     icon: HardHat,
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
-    // No `to` => no clickable link
   },
   {
     title: "Funded Startups",
     description: "Startups with seed capital or higher, aiming for scalable financial solutions.",
     icon: Rocket,
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
-    // No `to`
   },
   {
     title: "Home Services",
     description: "Landscaping, painting, plumbing, and electrical service providers needing simple yet effective financial tools.",
     icon: Wrench,
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-    // No `to`
   },
   {
     title: "Non-profit Organizations",
     description: "Entities requiring grant tracking, fund allocation, and compliance reporting.",
     icon: Heart,
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-    // No `to`
   },
   {
     title: "Franchises",
     description: "Franchise owners looking for centralized bookkeeping and financial oversight.",
     icon: Store,
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-    // No `to`
   },
   {
     title: "Restaurants",
     description: "Independent and chain restaurants requiring cash flow management and payroll solutions.",
     icon: Building,
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-    // No `to`
   },
   {
     title: "Real Estate",
     description: "Brokers and investors needing property management and income tracking tools.",
     icon: Home,
     image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc"
-    // No `to`
   },
   {
     title: "Churches",
     description: "Religious organizations with specific financial reporting and compliance needs.",
     icon: Church,
     image: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c"
-    // No `to`
   },
   {
     title: "Insurance Agencies",
     description: "Agencies managing commission tracking and recurring revenue streams.",
     icon: Shield,
     image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9"
-    // No `to`
   }
 ];
 
@@ -115,7 +102,6 @@ export const IndustriesGrid = () => {
           description={industry.description}
           icon={industry.icon}
           image={industry.image}
-          // Pass `to={industry.to}` (not `href`)
           to={industry.to}
         />
       ))}
