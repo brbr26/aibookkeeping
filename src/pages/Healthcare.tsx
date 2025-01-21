@@ -1,18 +1,25 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SEO } from "@/components/SEO";
 import { HealthcareServices } from "@/components/healthcare/HealthcareServices";
 import { ServicesCTA } from "@/components/services/ServicesCTA";
+import { Helmet } from "react-helmet";
 
 const Healthcare = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
-      <SEO 
-        title="Healthcare Financial Services | AI Bookkeeping"
-        description="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for healthcare practices. From medical billing to HIPAA compliance."
-        keywords="healthcare bookkeeping, medical practice accounting, healthcare financial services, medical billing, HIPAA compliant bookkeeping"
-        ogImage="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png"
-      />
+      <Helmet>
+        <title>Healthcare Financial Services | AI Bookkeeping</title>
+        <meta name="description" content="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for healthcare practices. From medical billing to HIPAA compliance." />
+        <meta name="keywords" content="healthcare bookkeeping, medical practice accounting, healthcare financial services, medical billing, HIPAA compliant bookkeeping" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Healthcare Financial Services | AI Bookkeeping" />
+        <meta property="og:description" content="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for healthcare practices." />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Healthcare Financial Services | AI Bookkeeping" />
+        <meta name="twitter:description" content="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for healthcare practices." />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+      </Helmet>
       
       <Header />
       

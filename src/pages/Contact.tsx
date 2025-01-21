@@ -1,16 +1,24 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { SEO } from "@/components/SEO";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <>
-      <SEO
-        title="Contact Us | AI Bookkeeping"
-        description="Get in touch with AI Bookkeeping for all your bookkeeping needs. Our team is ready to help your business grow and succeed."
-        keywords="contact, AI Bookkeeping, bookkeeping services, business accounting, financial services"
-      />
+      <Helmet>
+        <title>Contact Us | AI Bookkeeping</title>
+        <meta name="description" content="Get in touch with AI Bookkeeping for all your bookkeeping needs. Our team is ready to help your business grow and succeed." />
+        <meta name="keywords" content="contact, AI Bookkeeping, bookkeeping services, business accounting, financial services" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Us | AI Bookkeeping" />
+        <meta property="og:description" content="Get in touch with AI Bookkeeping for all your bookkeeping needs. Our team is ready to help your business grow and succeed." />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us | AI Bookkeeping" />
+        <meta name="twitter:description" content="Get in touch with AI Bookkeeping for all your bookkeeping needs. Our team is ready to help your business grow and succeed." />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+      </Helmet>
       
       <Header />
       

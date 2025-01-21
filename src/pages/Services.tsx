@@ -1,18 +1,25 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SEO } from "@/components/SEO";
 import { ServicesGrid } from "@/components/services/ServicesGrid";
 import { ServicesCTA } from "@/components/services/ServicesCTA";
+import { Helmet } from "react-helmet";
 
 const Services = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
-      <SEO 
-        title="AI-Powered Bookkeeping Services | AI Bookkeeping"
-        description="Discover our comprehensive AI-powered bookkeeping services including automated bookkeeping, financial reporting, tax preparation, and real-time monitoring. Transform your business finances with cutting-edge AI technology."
-        keywords="ai bookkeeping, automated bookkeeping, financial reporting, tax preparation, real-time monitoring, compliance management, financial advisory, business finance, ai technology"
-        ogImage="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png"
-      />
+      <Helmet>
+        <title>AI-Powered Bookkeeping Services | AI Bookkeeping</title>
+        <meta name="description" content="Discover our comprehensive AI-powered bookkeeping services including automated bookkeeping, financial reporting, tax preparation, and real-time monitoring. Transform your business finances with cutting-edge AI technology." />
+        <meta name="keywords" content="ai bookkeeping, automated bookkeeping, financial reporting, tax preparation, real-time monitoring, compliance management, financial advisory, business finance, ai technology" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="AI-Powered Bookkeeping Services | AI Bookkeeping" />
+        <meta property="og:description" content="Discover our comprehensive AI-powered bookkeeping services including automated bookkeeping, financial reporting, tax preparation, and real-time monitoring." />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI-Powered Bookkeeping Services | AI Bookkeeping" />
+        <meta name="twitter:description" content="Discover our comprehensive AI-powered bookkeeping services including automated bookkeeping, financial reporting, tax preparation, and real-time monitoring." />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+      </Helmet>
       
       <Header />
       
