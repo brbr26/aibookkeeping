@@ -2,7 +2,7 @@ import {
   Dialog,
   DialogContent,
 } from "@/components/ui/dialog";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface DemoRequestModalProps {
   trigger: React.ReactNode;
@@ -11,18 +11,6 @@ interface DemoRequestModalProps {
 export const DemoRequestModal = ({ trigger }: DemoRequestModalProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Load Calendly script when component mounts
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       {/* Custom trigger wrapper to handle the open state */}
@@ -30,12 +18,15 @@ export const DemoRequestModal = ({ trigger }: DemoRequestModalProps) => {
         {trigger}
       </div>
       
-      <DialogContent className="sm:max-w-[850px] max-h-[800px] bg-white p-0">
-        <div 
-          className="calendly-inline-widget w-full" 
-          data-url="https://calendly.com/bba/test-event?hide_event_type_details=1&background_color=121212&text_color=ffffff&primary_color=843eef"
-          style={{ minWidth: "320px", height: "700px" }}
-        />
+      <DialogContent className="sm:max-w-[850px] max-h-[800px] bg-white p-6">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-4 text-[#2A1364] font-oxanium">
+            Schedule a Demo
+          </h2>
+          <p className="text-gray-600 mb-4 font-lato">
+            Please contact us to schedule a demo of our AI-powered bookkeeping services.
+          </p>
+        </div>
       </DialogContent>
     </Dialog>
   );
