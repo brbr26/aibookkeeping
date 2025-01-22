@@ -16,6 +16,7 @@ const Healthcare = lazy(() => import("./pages/Healthcare"));
 const Construction = lazy(() => import("./pages/Construction"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Startups = lazy(() => import("./pages/Startups"));
+const HomeServices = lazy(() => import("./pages/HomeServices"));
 
 // Loading component
 const LoadingSpinner = () => (
@@ -87,6 +88,11 @@ function App() {
           <Route path="/startups" element={
             <Suspense fallback={<LoadingSpinner />}>
               <Startups />
+            </Suspense>
+          } />
+          <Route path="/home-services" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <HomeServices />
             </Suspense>
           } />
         </Routes>

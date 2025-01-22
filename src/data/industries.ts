@@ -53,7 +53,8 @@ export const industries = [
     title: "Home Services",
     description: "Landscaping, painting, plumbing, and electrical service providers needing simple yet effective financial tools.",
     icon: Wrench,
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    to: "/home-services"
   },
   {
     title: "Non-profit Organizations",
