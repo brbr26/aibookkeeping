@@ -8,6 +8,9 @@ import {
   HandHeart,
   Store,
   ChefHat,
+  House,
+  Church,
+  Shield,
 } from "lucide-react";
 
 export const industries = [
@@ -73,5 +76,26 @@ export const industries = [
     icon: ChefHat,
     image: "/industries/restaurants.jpg",
     to: "/restaurants",
+  },
+  {
+    title: "Real Estate",
+    description: "Property management accounting, tenant billing, and investment tracking solutions.",
+    icon: House,
+    image: "/industries/real-estate.jpg",
+    to: "/real-estate",
+  },
+  {
+    title: "Churches",
+    description: "Donation tracking, budget management, and specialized reporting for religious organizations.",
+    icon: Church,
+    image: "/industries/churches.jpg",
+    to: "/churches",
+  },
+  {
+    title: "Insurance Agencies",
+    description: "Premium tracking, commission management, and automated reconciliation for insurance providers.",
+    icon: Shield,
+    image: "/industries/insurance.jpg",
+    to: "/insurance",
   },
 ];
