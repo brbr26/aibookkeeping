@@ -17,8 +17,8 @@ const Construction = lazy(() => import("./pages/Construction"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Startups = lazy(() => import("./pages/Startups"));
 const HomeServices = lazy(() => import("./pages/HomeServices"));
+const NonProfits = lazy(() => import("./pages/NonProfits"));
 
-// Loading component
 const LoadingSpinner = () => (
   <div className="min-h-screen flex items-center justify-center">
     <Loader2 className="h-8 w-8 animate-spin text-primary" />
@@ -93,6 +93,11 @@ function App() {
           <Route path="/home-services" element={
             <Suspense fallback={<LoadingSpinner />}>
               <HomeServices />
+            </Suspense>
+          } />
+          <Route path="/non-profits" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <NonProfits />
             </Suspense>
           } />
         </Routes>

@@ -60,7 +60,8 @@ export const industries = [
     title: "Non-profit Organizations",
     description: "Entities requiring grant tracking, fund allocation, and compliance reporting.",
     icon: Heart,
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    to: "/non-profits"
   },
   {
     title: "Franchises",
