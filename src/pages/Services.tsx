@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { ServicesGrid } from "@/components/services/ServicesGrid";
 import { ServicesCTA } from "@/components/services/ServicesCTA";
 import { ServicesBenefits } from "@/components/services/ServicesBenefits";

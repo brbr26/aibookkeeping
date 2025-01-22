@@ -1,12 +1,21 @@
 import { Header } from "@/components/Header";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
         <title>Contact Us - AI Bookkeeping</title>
-        <meta name="description" content="Get in touch with us for any inquiries or support regarding AI Bookkeeping." />
+        <meta name="description" content="Get in touch with AI Bookkeeping for all your financial management needs. Our team is ready to help streamline your bookkeeping processes with AI-powered solutions." />
+        <meta name="keywords" content="contact AI bookkeeping, bookkeeping support, financial services contact, accounting help, business finance contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Us - AI Bookkeeping" />
+        <meta property="og:description" content="Get in touch with AI Bookkeeping for all your financial management needs." />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us - AI Bookkeeping" />
+        <meta name="twitter:description" content="Get in touch with AI Bookkeeping for all your financial management needs." />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
       <Header />
       <main className="py-20 bg-background">

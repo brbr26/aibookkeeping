@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { IndustriesGrid } from "@/components/industries/IndustriesGrid";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Industries = () => {
   return (
