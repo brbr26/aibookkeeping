@@ -46,7 +46,8 @@ export const industries = [
     title: "Funded Startups",
     description: "Startups with seed capital or higher, aiming for scalable financial solutions.",
     icon: Rocket,
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    to: "/startups"
   },
   {
     title: "Home Services",
