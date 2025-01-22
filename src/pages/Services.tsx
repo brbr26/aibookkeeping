@@ -16,9 +16,11 @@ const Services = () => {
         <meta property="og:title" content="Our Services - AI Bookkeeping" />
         <meta property="og:description" content="Explore AI Bookkeeping's comprehensive services. From automated bookkeeping to financial analytics, we help businesses streamline their finances." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Our Services - AI Bookkeeping" />
         <meta name="twitter:description" content="Discover our comprehensive AI-powered bookkeeping services." />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
       <Header />
       <main>

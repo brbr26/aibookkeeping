@@ -14,9 +14,11 @@ const Blog = () => {
         <meta property="og:title" content="Blog - AI Bookkeeping Insights & Updates" />
         <meta property="og:description" content="Stay updated with the latest in AI-powered bookkeeping, financial management tips, and industry insights from AI Bookkeeping experts." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Blog - AI Bookkeeping Insights & Updates" />
         <meta name="twitter:description" content="Stay updated with the latest in AI-powered bookkeeping, financial management tips, and industry insights." />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
       <Header />
       <main className="pt-24 pb-20 px-4">

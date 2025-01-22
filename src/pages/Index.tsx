@@ -11,16 +11,16 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>AI Bookkeeping: Automated Finances for SMBs</title>
-        <meta name="description" content="Discover AI Bookkeeping, the smart solution for business owners. Automate bookkeeping, streamline accounting, and gain real-time financial insights. From tax planning to advanced analytics, our AI-powered platform helps you save time, reduce errors, and grow your business with confidence." />
-        <meta name="keywords" content="AI bookkeeping, automated bookkeeping, smart accounting solutions, bookkeeping software, AI-powered accounting, real-time financial insights, tax planning, business automation, financial analytics, bookkeeping for small businesses, accounting automation, error-free bookkeeping, bookkeeping and tax compliance, scalable bookkeeping solutions, bookkeeping for entrepreneurs" />
+        <title>AI Bookkeeping: Automated Financial Solutions for Modern Businesses</title>
+        <meta name="description" content="Transform your business finances with AI-powered bookkeeping. Automate tasks, gain real-time insights, and make data-driven decisions with our intelligent platform." />
+        <meta name="keywords" content="AI bookkeeping, automated accounting, financial automation, business finance, machine learning accounting" />
+        <meta property="og:title" content="AI Bookkeeping: Automated Financial Solutions" />
+        <meta property="og:description" content="Transform your business finances with AI-powered bookkeeping. Automate tasks and gain real-time insights." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="AI Bookkeeping: Automated Finances for SMBs" />
-        <meta property="og:description" content="Discover AI Bookkeeping, the smart solution for business owners. Automate bookkeeping, streamline accounting, and gain real-time financial insights." />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Bookkeeping: Automated Finances for SMBs" />
-        <meta name="twitter:description" content="Discover AI Bookkeeping, the smart solution for business owners. Automate bookkeeping, streamline accounting, and gain real-time financial insights." />
+        <meta name="twitter:title" content="AI Bookkeeping: Automated Financial Solutions" />
+        <meta name="twitter:description" content="Transform your business finances with AI-powered bookkeeping." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
       <Header />

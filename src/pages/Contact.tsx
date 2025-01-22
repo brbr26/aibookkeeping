@@ -12,9 +12,11 @@ const Contact = () => {
         <meta property="og:title" content="Contact Us - AI Bookkeeping" />
         <meta property="og:description" content="Get in touch with AI Bookkeeping for all your automated financial management needs. We're here to help streamline your business finances." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us - AI Bookkeeping" />
         <meta name="twitter:description" content="Get in touch with AI Bookkeeping for all your automated financial management needs." />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
       <Header />
       <main className="pt-24 pb-20 px-4">
