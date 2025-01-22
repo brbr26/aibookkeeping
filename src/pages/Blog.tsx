@@ -61,48 +61,50 @@ const Blog = () => {
       
       <Header />
       
-      <main className="container mx-auto px-4 py-12">
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center mb-4">
-            <BookOpen className="w-8 h-8 text-primary mr-2" />
-            <h1 className="text-4xl font-oxanium font-bold text-gray-900">
-              AI Bookkeeping Blog
-            </h1>
+      <main className="pt-28 pb-12 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center mb-4">
+              <BookOpen className="w-8 h-8 text-primary mr-2" />
+              <h1 className="text-4xl font-oxanium font-bold text-gray-900">
+                AI Bookkeeping Blog
+              </h1>
+            </div>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Explore the latest insights, tips, and trends in AI-powered financial management
+            </p>
           </div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore the latest insights, tips, and trends in AI-powered financial management
-          </p>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
-            <article 
-              key={post.id} 
-              className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-[1.02]"
-            >
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-full h-48 object-cover"
-                loading="lazy"
-              />
-              <div className="p-6">
-                <p className="text-sm text-gray-500 mb-2">{post.date}</p>
-                <h2 className="text-xl font-oxanium font-semibold text-gray-900 mb-2">
-                  {post.title}
-                </h2>
-                <p className="text-gray-600 mb-4">
-                  {post.preview}
-                </p>
-                <Link
-                  to={`/blog/${post.slug}`}
-                  className="text-primary hover:text-primary-light font-semibold transition-colors"
-                >
-                  Read More →
-                </Link>
-              </div>
-            </article>
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogPosts.map((post) => (
+              <article 
+                key={post.id} 
+                className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-[1.02]"
+              >
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-48 object-cover"
+                  loading="lazy"
+                />
+                <div className="p-6">
+                  <p className="text-sm text-gray-500 mb-2">{post.date}</p>
+                  <h2 className="text-xl font-oxanium font-semibold text-gray-900 mb-2">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-600 mb-4">
+                    {post.preview}
+                  </p>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="text-primary hover:text-primary-light font-semibold transition-colors"
+                  >
+                    Read More →
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </main>
       
