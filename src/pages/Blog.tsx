@@ -1,44 +1,27 @@
-import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
-import { BookOpen } from "lucide-react";
+import { Header } from "@/components/Header";
 import { BlogPost } from "@/components/blog/BlogPost";
 import { blogPosts } from "@/data/blog-posts";
+import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>AI Bookkeeping Blog - Latest Insights & Updates</title>
-        <meta 
-          name="description" 
-          content="Stay updated with the latest trends in AI-powered bookkeeping, financial management tips, and industry insights from AI Bookkeeping experts."
-        />
-        <meta 
-          name="keywords" 
-          content="AI bookkeeping blog, financial insights, bookkeeping tips, business automation, financial management, accounting technology, business growth strategies, tax planning tips, small business finance, AI accounting"
-        />
+        <title>Blog - AI Bookkeeping Insights & Updates</title>
+        <meta name="description" content="Stay updated with the latest in AI-powered bookkeeping, financial management tips, and industry insights from AI Bookkeeping experts." />
+        <meta name="keywords" content="AI bookkeeping blog, financial insights, bookkeeping tips, business finance, AI technology" />
+        <meta property="og:title" content="Blog - AI Bookkeeping Insights & Updates" />
+        <meta property="og:description" content="Stay updated with the latest in AI-powered bookkeeping, financial management tips, and industry insights from AI Bookkeeping experts." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="AI Bookkeeping Blog - Latest Insights & Updates" />
-        <meta 
-          property="og:description" 
-          content="Stay updated with the latest trends in AI-powered bookkeeping, financial management tips, and industry insights from AI Bookkeeping experts."
-        />
-        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Bookkeeping Blog - Latest Insights & Updates" />
-        <meta 
-          name="twitter:description" 
-          content="Stay updated with the latest trends in AI-powered bookkeeping, financial management tips, and industry insights from AI Bookkeeping experts."
-        />
-        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta name="twitter:title" content="Blog - AI Bookkeeping Insights & Updates" />
+        <meta name="twitter:description" content="Stay updated with the latest in AI-powered bookkeeping, financial management tips, and industry insights." />
       </Helmet>
       <Header />
-      <main className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold text-center mb-12 text-white font-oxanium">
-            Latest Insights & Updates
-          </h1>
+      <main className="pt-24 pb-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h1 className="text-4xl font-bold text-white mb-12 font-oxanium">Latest Insights</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <BlogPost key={post.id} {...post} />

@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { ScrollToTop } from "./ScrollToTop";
 import { Loader2 } from "lucide-react";
 import { routes } from "./routes";
+import { HelmetProvider } from 'react-helmet-async';
 
 const LoadingSpinner = () => (
   <div className="min-h-screen flex items-center justify-center">
@@ -12,24 +13,26 @@ const LoadingSpinner = () => (
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Suspense fallback={<LoadingSpinner />}>
-        <Routes>
-          {routes.map(({ path, element: Element }) => (
-            <Route
-              key={path}
-              path={path}
-              element={
-                <Suspense fallback={<LoadingSpinner />}>
-                  <Element />
-                </Suspense>
-              }
-            />
-          ))}
-        </Routes>
-      </Suspense>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            {routes.map(({ path, element: Element }) => (
+              <Route
+                key={path}
+                path={path}
+                element={
+                  <Suspense fallback={<LoadingSpinner />}>
+                    <Element />
+                  </Suspense>
+                }
+              />
+            ))}
+          </Routes>
+        </Suspense>
+      </Router>
+    </HelmetProvider>
   );
 }
 

@@ -1,50 +1,51 @@
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#121212]">
       <Helmet>
         <title>Contact Us - AI Bookkeeping</title>
-        <meta name="description" content="Get in touch with AI Bookkeeping for all your financial management needs. Our team is ready to help streamline your bookkeeping processes with AI-powered solutions." />
-        <meta name="keywords" content="contact AI bookkeeping, bookkeeping support, financial services contact, accounting help, business finance contact" />
-        <meta property="og:type" content="website" />
+        <meta name="description" content="Get in touch with AI Bookkeeping for all your automated financial management needs. We're here to help streamline your business finances." />
+        <meta name="keywords" content="contact AI bookkeeping, bookkeeping support, financial services contact, AI accounting help" />
         <meta property="og:title" content="Contact Us - AI Bookkeeping" />
-        <meta property="og:description" content="Get in touch with AI Bookkeeping for all your financial management needs." />
-        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta property="og:description" content="Get in touch with AI Bookkeeping for all your automated financial management needs. We're here to help streamline your business finances." />
+        <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us - AI Bookkeeping" />
-        <meta name="twitter:description" content="Get in touch with AI Bookkeeping for all your financial management needs." />
-        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta name="twitter:description" content="Get in touch with AI Bookkeeping for all your automated financial management needs." />
       </Helmet>
       <Header />
-      <main className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold text-center mb-12 text-white font-oxanium">
-            Contact Us
-          </h1>
-          <p className="text-lg text-center text-white mb-8">
-            We would love to hear from you! Please fill out the form below or reach out to us via email.
-          </p>
-          <form className="max-w-lg mx-auto">
-            <div className="mb-4">
-              <label className="block text-white mb-2" htmlFor="name">Name</label>
-              <input className="w-full p-2 border border-gray-300 rounded" type="text" id="name" required />
+      <main className="pt-24 pb-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <h1 className="text-4xl font-bold text-white mb-12 font-oxanium">Contact Us</h1>
+          <div className="bg-white rounded-lg p-8 shadow-lg">
+            <p className="text-gray-700 mb-6">
+              We'd love to hear from you. Please reach out using the contact information below.
+            </p>
+            <div className="space-y-4">
+              <div>
+                <h2 className="text-xl font-semibold text-gray-800 mb-2">Email</h2>
+                <p className="text-gray-600">contact@aibookkeeping.com</p>
+              </div>
+              <div>
+                <h2 className="text-xl font-semibold text-gray-800 mb-2">Phone</h2>
+                <p className="text-gray-600">(555) 123-4567</p>
+              </div>
+              <div>
+                <h2 className="text-xl font-semibold text-gray-800 mb-2">Address</h2>
+                <p className="text-gray-600">
+                  123 Business Street<br />
+                  Suite 100<br />
+                  San Francisco, CA 94105
+                </p>
+              </div>
             </div>
-            <div className="mb-4">
-              <label className="block text-white mb-2" htmlFor="email">Email</label>
-              <input className="w-full p-2 border border-gray-300 rounded" type="email" id="email" required />
-            </div>
-            <div className="mb-4">
-              <label className="block text-white mb-2" htmlFor="message">Message</label>
-              <textarea className="w-full p-2 border border-gray-300 rounded" id="message" rows={4} required></textarea>
-            </div>
-            <button className="w-full bg-primary text-white py-2 rounded hover:bg-primary/80 transition duration-300" type="submit">
-              Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
