@@ -16,6 +16,7 @@ const NonProfits = lazy(() => import("./pages/NonProfits"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Franchises = lazy(() => import("./pages/Franchises"));
 const Restaurants = lazy(() => import("./pages/Restaurants"));
+const RealEstate = lazy(() => import("./pages/RealEstate"));
 
 export interface RouteConfig {
   path: string;
@@ -38,4 +39,5 @@ export const routes: RouteConfig[] = [
   { path: "/blog", element: Blog },
   { path: "/franchises", element: Franchises },
   { path: "/restaurants", element: Restaurants },
+  { path: "/real-estate", element: RealEstate },
 ];
