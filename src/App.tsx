@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { ScrollToTop } from "./ScrollToTop";
 import { Loader2 } from "lucide-react";
 import { routes } from "./routes";
+import { Helmet } from "react-helmet-async";
 
 const LoadingSpinner = () => (
   <div className="min-h-screen flex items-center justify-center">
@@ -14,6 +15,9 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Helmet defaultTitle="AI Bookkeeping" titleTemplate="%s | AI Bookkeeping">
+        <meta name="description" content="Transform your business finances with AI-powered bookkeeping solutions." />
+      </Helmet>
       <Routes>
         {routes.map(({ path, element: Element }) => (
           <Route
