@@ -12,12 +12,12 @@ const companyLinks = [
   { href: "#", label: "About" },
   { href: "#", label: "Careers" },
   { href: "/contact", label: "Contact" },
-  { href: "/blog", label: "Blog" },
 ];
 
 const resourceLinks = [
   { href: "#", label: "Help Center" },
   { href: "#", label: "Documentation" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export const Footer = () => {
