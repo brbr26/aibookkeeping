@@ -28,7 +28,7 @@ const Contact = () => {
             </div>
             <div className="mb-4">
               <label className="block text-white mb-2" htmlFor="message">Message</label>
-              <textarea className="w-full p-2 border border-gray-300 rounded" id="message" rows="4" required></textarea>
+              <textarea className="w-full p-2 border border-gray-300 rounded" id="message" rows={4} required></textarea>
             </div>
             <button className="w-full bg-primary text-white py-2 rounded hover:bg-primary/80 transition duration-300" type="submit">
               Send Message
