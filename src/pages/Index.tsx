@@ -25,6 +25,7 @@ const Index = () => {
       </Helmet>
       <Header />
       <main>
+        <h1 className="sr-only">AI Bookkeeping - Automated Financial Solutions</h1>
         <Hero />
         <Features />
         <HomeServices />

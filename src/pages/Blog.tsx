@@ -7,7 +7,7 @@ import { blogPosts } from "@/data/blog-posts";
 
 const Blog = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <Helmet>
         <title>AI Bookkeeping Blog - Latest Insights & Updates</title>
         <meta 
@@ -33,23 +33,12 @@ const Blog = () => {
         />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
-      
       <Header />
-      
-      <main className="pt-32 md:pt-40 pb-16 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center mb-4">
-              <BookOpen className="w-8 h-8 text-primary mr-2" />
-              <h1 className="text-4xl font-oxanium font-bold text-gray-900">
-                AI Bookkeeping Blog
-              </h1>
-            </div>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore the latest insights, tips, and trends in AI-powered financial management
-            </p>
-          </div>
-
+      <main className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h1 className="text-5xl font-bold text-center mb-12 text-white font-oxanium">
+            Latest Insights & Updates
+          </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <BlogPost key={post.id} {...post} />
@@ -57,7 +46,6 @@ const Blog = () => {
           </div>
         </div>
       </main>
-      
       <Footer />
     </div>
   );
