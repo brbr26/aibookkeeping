@@ -43,6 +43,14 @@
     <priority>0.80</priority>
   </url>
 
+  <!-- Franchises Page -->
+  <url>
+    <loc>https://www.aibookkeeping.com/franchises</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
   <!-- Login Page (if public and should be indexed) -->
   <url>
     <loc>https://www.aibookkeeping.com/login</loc>
