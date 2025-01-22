@@ -18,20 +18,11 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Startups = lazy(() => import("./pages/Startups"));
 const HomeServices = lazy(() => import("./pages/HomeServices"));
 const NonProfits = lazy(() => import("./pages/NonProfits"));
+const Blog = lazy(() => import("./pages/Blog"));
 
 const LoadingSpinner = () => (
   <div className="min-h-screen flex items-center justify-center">
     <Loader2 className="h-8 w-8 animate-spin text-primary" />
-  </div>
-);
-
-// Error boundary component
-const ErrorFallback = () => (
-  <div className="min-h-screen flex items-center justify-center">
-    <div className="text-center">
-      <h2 className="text-xl font-semibold mb-2">Oops! Something went wrong</h2>
-      <p>Please refresh the page to try again.</p>
-    </div>
   </div>
 );
 
@@ -98,6 +89,11 @@ function App() {
           <Route path="/non-profits" element={
             <Suspense fallback={<LoadingSpinner />}>
               <NonProfits />
+            </Suspense>
+          } />
+          <Route path="/blog" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Blog />
             </Suspense>
           } />
         </Routes>
