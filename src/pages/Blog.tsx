@@ -14,6 +14,24 @@ const Blog = () => {
           name="description" 
           content="Stay updated with the latest trends in AI-powered bookkeeping, financial management tips, and industry insights from AI Bookkeeping experts."
         />
+        <meta 
+          name="keywords" 
+          content="AI bookkeeping blog, financial insights, bookkeeping tips, business automation, financial management, accounting technology, business growth strategies, tax planning tips, small business finance, AI accounting"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="AI Bookkeeping Blog - Latest Insights & Updates" />
+        <meta 
+          property="og:description" 
+          content="Stay updated with the latest trends in AI-powered bookkeeping, financial management tips, and industry insights from AI Bookkeeping experts."
+        />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI Bookkeeping Blog - Latest Insights & Updates" />
+        <meta 
+          name="twitter:description" 
+          content="Stay updated with the latest trends in AI-powered bookkeeping, financial management tips, and industry insights from AI Bookkeeping experts."
+        />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
       
       <Header />
