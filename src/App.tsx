@@ -1,24 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
 import { ScrollToTop } from "./ScrollToTop";
 import { Loader2 } from "lucide-react";
-
-// Import Index page directly to avoid dynamic import issues
-import Index from "./pages/Index";
-
-// Lazy load other pages
-const Services = lazy(() => import("./pages/Services"));
-const Login = lazy(() => import("./pages/Login"));
-const Industries = lazy(() => import("./pages/Industries"));
-const Ecommerce = lazy(() => import("./pages/Ecommerce"));
-const LawFirms = lazy(() => import("./pages/LawFirms"));
-const Healthcare = lazy(() => import("./pages/Healthcare"));
-const Construction = lazy(() => import("./pages/Construction"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Startups = lazy(() => import("./pages/Startups"));
-const HomeServices = lazy(() => import("./pages/HomeServices"));
-const NonProfits = lazy(() => import("./pages/NonProfits"));
-const Blog = lazy(() => import("./pages/Blog"));
+import { routes } from "./routes";
 
 const LoadingSpinner = () => (
   <div className="min-h-screen flex items-center justify-center">
@@ -32,70 +16,17 @@ function App() {
       <ScrollToTop />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
-          {/* Home page - directly imported */}
-          <Route path="/" element={<Index />} />
-
-          {/* Other pages - lazy loaded */}
-          <Route path="/services" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Services />
-            </Suspense>
-          } />
-          <Route path="/login" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Login />
-            </Suspense>
-          } />
-          <Route path="/industries" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Industries />
-            </Suspense>
-          } />
-          <Route path="/contact" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Contact />
-            </Suspense>
-          } />
-          <Route path="/ecommerce" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Ecommerce />
-            </Suspense>
-          } />
-          <Route path="/law-firms" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <LawFirms />
-            </Suspense>
-          } />
-          <Route path="/healthcare" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Healthcare />
-            </Suspense>
-          } />
-          <Route path="/construction" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Construction />
-            </Suspense>
-          } />
-          <Route path="/startups" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Startups />
-            </Suspense>
-          } />
-          <Route path="/home-services" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <HomeServices />
-            </Suspense>
-          } />
-          <Route path="/non-profits" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <NonProfits />
-            </Suspense>
-          } />
-          <Route path="/blog" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Blog />
-            </Suspense>
-          } />
+          {routes.map(({ path, element: Element }) => (
+            <Route
+              key={path}
+              path={path}
+              element={
+                <Suspense fallback={<LoadingSpinner />}>
+                  <Element />
+                </Suspense>
+              }
+            />
+          ))}
         </Routes>
       </Suspense>
     </Router>
