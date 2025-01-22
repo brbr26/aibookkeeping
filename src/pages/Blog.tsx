@@ -61,7 +61,7 @@ const Blog = () => {
       
       <Header />
       
-      <main className="pt-28 pb-12 px-4">
+      <main className="pt-32 md:pt-40 pb-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-4">
