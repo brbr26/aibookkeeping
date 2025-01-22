@@ -16,21 +16,19 @@ function App() {
     <HelmetProvider>
       <Router>
         <ScrollToTop />
-        <Suspense fallback={<LoadingSpinner />}>
-          <Routes>
-            {routes.map(({ path, element: Element }) => (
-              <Route
-                key={path}
-                path={path}
-                element={
-                  <Suspense fallback={<LoadingSpinner />}>
-                    <Element />
-                  </Suspense>
-                }
-              />
-            ))}
-          </Routes>
-        </Suspense>
+        <Routes>
+          {routes.map(({ path, element: Element }) => (
+            <Route
+              key={path}
+              path={path}
+              element={
+                <Suspense fallback={<LoadingSpinner />}>
+                  <Element />
+                </Suspense>
+              }
+            />
+          ))}
+        </Routes>
       </Router>
     </HelmetProvider>
   );
