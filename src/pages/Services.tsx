@@ -10,16 +10,16 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Our Services - AI Bookkeeping</title>
-        <meta name="description" content="Explore AI Bookkeeping's comprehensive services. From automated bookkeeping to financial analytics, we help businesses streamline their finances." />
+        <title>Professional AI Bookkeeping Services | Financial Management Solutions</title>
+        <meta name="description" content="Explore our comprehensive AI-powered bookkeeping services. From automated data entry to real-time financial insights, we help businesses streamline their finances." />
         <meta name="keywords" content="AI bookkeeping services, automated accounting, financial analytics, business bookkeeping, AI financial services" />
-        <meta property="og:title" content="Our Services - AI Bookkeeping" />
-        <meta property="og:description" content="Explore AI Bookkeeping's comprehensive services. From automated bookkeeping to financial analytics, we help businesses streamline their finances." />
+        <meta property="og:title" content="Professional AI Bookkeeping Services | Financial Management Solutions" />
+        <meta property="og:description" content="Explore our comprehensive AI-powered bookkeeping services. From automated data entry to real-time financial insights." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Our Services - AI Bookkeeping" />
-        <meta name="twitter:description" content="Discover our comprehensive AI-powered bookkeeping services." />
+        <meta name="twitter:title" content="Professional AI Bookkeeping Services | Financial Management Solutions" />
+        <meta name="twitter:description" content="Explore our comprehensive AI-powered bookkeeping services." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
       <Header />
