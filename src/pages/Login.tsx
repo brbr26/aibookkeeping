@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AlertCircle } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -23,20 +22,6 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-[#121212] flex flex-col justify-center py-6 sm:px-6 lg:px-8">
-      <Helmet>
-        <title>Sign In | AI Bookkeeping</title>
-        <meta name="description" content="Sign in to your AI Bookkeeping account to access your financial dashboard and manage your bookkeeping services." />
-        <meta name="keywords" content="login, sign in, AI bookkeeping account, financial dashboard" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Sign In | AI Bookkeeping" />
-        <meta property="og:description" content="Sign in to your AI Bookkeeping account to access your financial dashboard and manage your bookkeeping services." />
-        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sign In | AI Bookkeeping" />
-        <meta name="twitter:description" content="Sign in to your AI Bookkeeping account to access your financial dashboard and manage your bookkeeping services." />
-        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-      </Helmet>
-
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <Link to="/">
           <img
