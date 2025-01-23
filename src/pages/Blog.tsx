@@ -2,7 +2,6 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { BlogPost } from "@/components/blog/BlogPost";
 import { blogPosts } from "@/data/blog-posts";
-import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
   return (
