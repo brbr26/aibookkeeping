@@ -2,26 +2,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StartupsServices } from "@/components/startups/StartupsServices";
 import { ServicesCTA } from "@/components/services/ServicesCTA";
-import { Helmet } from "react-helmet-async";
 
 const Startups = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
-      <Helmet>
-        <title>Startup Financial Management & Growth Services | AI Bookkeeping</title>
-        <meta name="description" content="Empower your startup with AI-driven financial management. Track burn rate, manage fundraising, and optimize growth metrics with automated bookkeeping solutions." />
-        <meta name="keywords" content="startup bookkeeping, startup financial services, burn rate tracking, fundraising support, startup metrics, growth analytics" />
-        <meta property="og:title" content="Startup Financial Management & Growth Services | AI Bookkeeping" />
-        <meta property="og:description" content="Empower your startup with AI-driven financial management and growth optimization." />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Startup Financial Management & Growth Services" />
-        <meta name="twitter:description" content="Empower your startup with AI-driven financial management." />
-        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <link rel="canonical" href="https://aibookkeeping.com/startups" />
-      </Helmet>
-      
       <Header />
       
       <main className="container mx-auto px-4">
