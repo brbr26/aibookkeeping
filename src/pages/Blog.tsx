@@ -6,20 +6,6 @@ import { blogPosts } from "@/data/blog-posts";
 const Blog = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
-      <Helmet>
-        <title>AI Bookkeeping Blog: Expert Financial Insights & Industry Updates</title>
-        <meta name="description" content="Stay informed with expert insights on AI-powered bookkeeping, financial management strategies, and industry trends. Learn how to optimize your business finances." />
-        <meta name="keywords" content="AI bookkeeping blog, financial management tips, business accounting insights, automated bookkeeping guides, financial technology trends" />
-        <meta property="og:title" content="AI Bookkeeping Blog: Expert Financial Insights" />
-        <meta property="og:description" content="Expert insights on AI-powered bookkeeping and financial management strategies for modern businesses." />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Bookkeeping Blog: Expert Financial Insights" />
-        <meta name="twitter:description" content="Expert insights on AI-powered bookkeeping and financial management." />
-        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <link rel="canonical" href="https://aibookkeeping.com/blog" />
-      </Helmet>
       <Header />
       <main className="pt-24 pb-20 px-4">
         <div className="container mx-auto max-w-6xl">
