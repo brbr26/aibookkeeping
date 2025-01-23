@@ -8,17 +8,18 @@ const HomeServices = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Home Services Bookkeeping & Financial Services | AI Bookkeeping</title>
-        <meta name="description" content="Specialized AI-powered bookkeeping and financial management services for home service providers. From job costing to seasonal planning and invoice management." />
-        <meta name="keywords" content="home services bookkeeping, plumbing accounting, landscaping financial services, handyman bookkeeping, property maintenance accounting" />
+        <title>Home Services Business Financial Management | AI Bookkeeping</title>
+        <meta name="description" content="Streamline your home services business finances with AI-powered bookkeeping. From job costing to scheduling and invoice management, optimize your operations." />
+        <meta name="keywords" content="home services bookkeeping, contractor accounting, service business financial management, job costing, scheduling software" />
+        <meta property="og:title" content="Home Services Business Financial Management | AI Bookkeeping" />
+        <meta property="og:description" content="Streamline your home services business finances with AI-powered solutions." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Home Services Bookkeeping & Financial Services | AI Bookkeeping" />
-        <meta property="og:description" content="Specialized AI-powered bookkeeping and financial management services for home service providers." />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Home Services Bookkeeping & Financial Services | AI Bookkeeping" />
-        <meta name="twitter:description" content="Specialized AI-powered bookkeeping and financial management services for home service providers." />
+        <meta name="twitter:title" content="Home Services Business Financial Management" />
+        <meta name="twitter:description" content="Streamline your home services business finances." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <link rel="canonical" href="https://aibookkeeping.com/home-services" />
       </Helmet>
       
       <Header />

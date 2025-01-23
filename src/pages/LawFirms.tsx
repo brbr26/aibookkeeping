@@ -8,17 +8,18 @@ const LawFirms = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Law Firm Bookkeeping & Accounting Services | AI Bookkeeping</title>
-        <meta name="description" content="Specialized AI-powered bookkeeping, accounting, and tax services tailored for law firms. Trust account management, case cost accounting, and regulatory compliance solutions." />
-        <meta name="keywords" content="law firm bookkeeping, legal accounting services, trust account management, IOLTA compliance, law firm tax services, legal practice accounting" />
+        <title>Law Firm Bookkeeping & Trust Account Management | AI Bookkeeping</title>
+        <meta name="description" content="Expert bookkeeping services for law firms. Manage trust accounts, track billable hours, and ensure compliance with automated AI-powered financial solutions." />
+        <meta name="keywords" content="law firm bookkeeping, legal accounting, trust account management, IOLTA compliance, law firm financial services" />
+        <meta property="og:title" content="Law Firm Bookkeeping & Trust Account Management | AI Bookkeeping" />
+        <meta property="og:description" content="Expert bookkeeping services for law firms. Manage trust accounts and ensure compliance with AI-powered solutions." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Law Firm Bookkeeping & Accounting Services | AI Bookkeeping" />
-        <meta property="og:description" content="Specialized AI-powered bookkeeping, accounting, and tax services tailored for law firms." />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Law Firm Bookkeeping & Accounting Services | AI Bookkeeping" />
-        <meta name="twitter:description" content="Specialized AI-powered bookkeeping, accounting, and tax services tailored for law firms." />
+        <meta name="twitter:title" content="Law Firm Bookkeeping & Trust Account Management" />
+        <meta name="twitter:description" content="Expert bookkeeping services for law firms with AI-powered solutions." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <link rel="canonical" href="https://aibookkeeping.com/law-firms" />
       </Helmet>
       
       <Header />

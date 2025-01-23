@@ -8,17 +8,18 @@ const Construction = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Construction Financial Services | AI Bookkeeping</title>
-        <meta name="description" content="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for construction companies. From project cost tracking to payroll management." />
-        <meta name="keywords" content="construction bookkeeping, contractor accounting, construction financial services, project cost tracking, construction payroll management" />
+        <title>Construction Industry Financial Services | AI Bookkeeping</title>
+        <meta name="description" content="Specialized bookkeeping services for construction companies. Track project costs, manage payroll, and optimize cash flow with AI-powered financial solutions." />
+        <meta name="keywords" content="construction bookkeeping, contractor accounting, project cost tracking, construction payroll, job costing" />
+        <meta property="og:title" content="Construction Industry Financial Services | AI Bookkeeping" />
+        <meta property="og:description" content="Specialized bookkeeping services for construction companies. Optimize operations with AI-powered solutions." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Construction Financial Services | AI Bookkeeping" />
-        <meta property="og:description" content="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for construction companies." />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Construction Financial Services | AI Bookkeeping" />
-        <meta name="twitter:description" content="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for construction companies." />
+        <meta name="twitter:title" content="Construction Industry Financial Services" />
+        <meta name="twitter:description" content="Specialized bookkeeping services for construction companies." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <link rel="canonical" href="https://aibookkeeping.com/construction" />
       </Helmet>
       
       <Header />

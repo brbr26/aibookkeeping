@@ -8,17 +8,18 @@ const Healthcare = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Healthcare Financial Services | AI Bookkeeping</title>
-        <meta name="description" content="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for healthcare practices. From medical billing to HIPAA compliance." />
-        <meta name="keywords" content="healthcare bookkeeping, medical practice accounting, healthcare financial services, medical billing, HIPAA compliant bookkeeping" />
+        <title>Healthcare Practice Financial Management | AI Bookkeeping</title>
+        <meta name="description" content="Specialized financial services for healthcare practices. Streamline medical billing, manage insurance claims, and optimize revenue cycles with AI-powered solutions." />
+        <meta name="keywords" content="healthcare bookkeeping, medical practice accounting, insurance billing, revenue cycle management, HIPAA compliant bookkeeping" />
+        <meta property="og:title" content="Healthcare Practice Financial Management | AI Bookkeeping" />
+        <meta property="og:description" content="Specialized financial services for healthcare practices. Streamline operations with AI-powered solutions." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Healthcare Financial Services | AI Bookkeeping" />
-        <meta property="og:description" content="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for healthcare practices." />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Healthcare Financial Services | AI Bookkeeping" />
-        <meta name="twitter:description" content="Specialized AI-powered bookkeeping, accounting, and financial management services tailored for healthcare practices." />
+        <meta name="twitter:title" content="Healthcare Practice Financial Management" />
+        <meta name="twitter:description" content="Specialized financial services for healthcare practices." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <link rel="canonical" href="https://aibookkeeping.com/healthcare" />
       </Helmet>
       
       <Header />

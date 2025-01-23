@@ -8,17 +8,18 @@ const Startups = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Startup Bookkeeping & Financial Services | AI Bookkeeping</title>
-        <meta name="description" content="Specialized AI-powered bookkeeping and financial management services for funded startups. From fundraising support to burn rate analysis and growth metrics tracking." />
-        <meta name="keywords" content="startup bookkeeping, startup financial services, burn rate analysis, fundraising support, startup metrics tracking, startup accounting" />
+        <title>Startup Financial Management & Growth Services | AI Bookkeeping</title>
+        <meta name="description" content="Empower your startup with AI-driven financial management. Track burn rate, manage fundraising, and optimize growth metrics with automated bookkeeping solutions." />
+        <meta name="keywords" content="startup bookkeeping, startup financial services, burn rate tracking, fundraising support, startup metrics, growth analytics" />
+        <meta property="og:title" content="Startup Financial Management & Growth Services | AI Bookkeeping" />
+        <meta property="og:description" content="Empower your startup with AI-driven financial management and growth optimization." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Startup Bookkeeping & Financial Services | AI Bookkeeping" />
-        <meta property="og:description" content="Specialized AI-powered bookkeeping and financial management services for funded startups." />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Startup Bookkeeping & Financial Services | AI Bookkeeping" />
-        <meta name="twitter:description" content="Specialized AI-powered bookkeeping and financial management services for funded startups." />
+        <meta name="twitter:title" content="Startup Financial Management & Growth Services" />
+        <meta name="twitter:description" content="Empower your startup with AI-driven financial management." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <link rel="canonical" href="https://aibookkeeping.com/startups" />
       </Helmet>
       
       <Header />

@@ -8,29 +8,18 @@ const Churches = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Church Bookkeeping Services | AI Bookkeeping</title>
-        <meta 
-          name="description" 
-          content="Specialized AI-powered bookkeeping and financial management services for churches and religious organizations. Streamline donation tracking, ministry budgeting, and maintain compliance." 
-        />
-        <meta 
-          name="keywords" 
-          content="church bookkeeping, donation management, ministry budgeting, church financial services, religious organization accounting, non-profit compliance" 
-        />
+        <title>Church & Religious Organization Financial Services | AI Bookkeeping</title>
+        <meta name="description" content="Specialized financial management for churches and religious organizations. Track donations, manage ministry budgets, and ensure compliance with AI-powered solutions." />
+        <meta name="keywords" content="church bookkeeping, religious organization accounting, donation tracking, ministry budgeting, church financial compliance" />
+        <meta property="og:title" content="Church & Religious Organization Financial Services | AI Bookkeeping" />
+        <meta property="og:description" content="Specialized financial management for churches and religious organizations." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Church Bookkeeping Services | AI Bookkeeping" />
-        <meta 
-          property="og:description" 
-          content="Specialized AI-powered bookkeeping and financial management services for churches and religious organizations." 
-        />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Church Bookkeeping Services | AI Bookkeeping" />
-        <meta 
-          name="twitter:description" 
-          content="Specialized AI-powered bookkeeping and financial management services for churches and religious organizations." 
-        />
+        <meta name="twitter:title" content="Church & Religious Organization Financial Services" />
+        <meta name="twitter:description" content="Specialized financial management for religious organizations." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <link rel="canonical" href="https://aibookkeeping.com/churches" />
       </Helmet>
       
       <Header />

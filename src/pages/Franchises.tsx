@@ -8,29 +8,18 @@ const Franchises = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Franchise Bookkeeping Services | AI Bookkeeping</title>
-        <meta 
-          name="description" 
-          content="Specialized AI-powered bookkeeping and financial management services for franchises. Streamline multi-location operations and ensure compliance across your franchise network." 
-        />
-        <meta 
-          name="keywords" 
-          content="franchise bookkeeping, multi-location accounting, franchise financial management, franchise compliance, royalty tracking, franchise analytics" 
-        />
+        <title>Franchise Financial Management & Multi-Location Services | AI Bookkeeping</title>
+        <meta name="description" content="Comprehensive financial management for franchises. Streamline multi-location operations, track royalties, and ensure compliance with AI-powered bookkeeping solutions." />
+        <meta name="keywords" content="franchise bookkeeping, multi-location accounting, franchise financial management, royalty tracking, franchise compliance" />
+        <meta property="og:title" content="Franchise Financial Management & Multi-Location Services | AI Bookkeeping" />
+        <meta property="og:description" content="Comprehensive financial management for franchises. Optimize operations with AI-powered solutions." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Franchise Bookkeeping Services | AI Bookkeeping" />
-        <meta 
-          property="og:description" 
-          content="Specialized AI-powered bookkeeping and financial management services for franchises." 
-        />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Franchise Bookkeeping Services | AI Bookkeeping" />
-        <meta 
-          name="twitter:description" 
-          content="Specialized AI-powered bookkeeping and financial management services for franchises." 
-        />
+        <meta name="twitter:title" content="Franchise Financial Management & Multi-Location Services" />
+        <meta name="twitter:description" content="Comprehensive financial management for franchises." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <link rel="canonical" href="https://aibookkeeping.com/franchises" />
       </Helmet>
       
       <Header />

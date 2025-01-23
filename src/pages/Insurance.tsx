@@ -8,29 +8,18 @@ const Insurance = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Insurance Agency Financial Services | AI Bookkeeping</title>
-        <meta 
-          name="description" 
-          content="Specialized AI-powered bookkeeping and financial management services for insurance agencies. From commission tracking to premium processing and compliance management." 
-        />
-        <meta 
-          name="keywords" 
-          content="insurance agency bookkeeping, commission tracking, premium processing, insurance financial services, agency compliance management" 
-        />
+        <title>Insurance Agency Financial Management | AI Bookkeeping</title>
+        <meta name="description" content="Specialized financial services for insurance agencies. Track commissions, manage policy renewals, and optimize agency operations with AI-powered bookkeeping solutions." />
+        <meta name="keywords" content="insurance agency bookkeeping, commission tracking, policy management, insurance financial services, agency compliance" />
+        <meta property="og:title" content="Insurance Agency Financial Management | AI Bookkeeping" />
+        <meta property="og:description" content="Specialized financial services for insurance agencies. Optimize operations with AI-powered solutions." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Insurance Agency Financial Services | AI Bookkeeping" />
-        <meta 
-          property="og:description" 
-          content="Specialized AI-powered bookkeeping and financial management services for insurance agencies." 
-        />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Insurance Agency Financial Services | AI Bookkeeping" />
-        <meta 
-          name="twitter:description" 
-          content="Specialized AI-powered bookkeeping and financial management services for insurance agencies." 
-        />
+        <meta name="twitter:title" content="Insurance Agency Financial Management" />
+        <meta name="twitter:description" content="Specialized financial services for insurance agencies." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <link rel="canonical" href="https://aibookkeeping.com/insurance" />
       </Helmet>
       
       <Header />
