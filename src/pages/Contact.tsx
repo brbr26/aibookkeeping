@@ -1,31 +1,31 @@
-import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Contact AI Bookkeeping - Get Expert Financial Support</title>
-        <meta name="description" content="Connect with AI Bookkeeping experts for personalized financial solutions. Get answers to your questions about our AI-powered bookkeeping services and start optimizing your business finances." />
-        <meta name="keywords" content="contact AI bookkeeping, financial services support, bookkeeping consultation, business finance help, accounting services contact" />
-        <meta property="og:title" content="Contact AI Bookkeeping - Expert Financial Support" />
-        <meta property="og:description" content="Connect with AI Bookkeeping experts for personalized financial solutions and optimize your business finances." />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact AI Bookkeeping - Expert Financial Support" />
-        <meta name="twitter:description" content="Connect with AI Bookkeeping experts for personalized financial solutions." />
-        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <title>Contact AI Bookkeeping | Get Expert Financial Support</title>
+        <meta name="description" content="Get in touch with our AI bookkeeping experts. We're here to help streamline your business finances and answer any questions about our automated solutions." />
+        <meta name="keywords" content="contact AI bookkeeping, financial support, bookkeeping consultation, business finance help" />
         <link rel="canonical" href="https://aibookkeeping.com/contact" />
+        <meta property="og:title" content="Contact AI Bookkeeping Support" />
+        <meta property="og:description" content="Get expert support for your business financial needs." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://aibookkeeping.com/contact" />
+        <meta name="twitter:title" content="Contact AI Bookkeeping" />
+        <meta name="twitter:description" content="Expert financial support at your service." />
       </Helmet>
       <Header />
-      <main className="pt-24 pb-20 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <h1 className="text-4xl font-bold text-white mb-12 font-oxanium">Get in Touch with Our Financial Experts</h1>
-          <div className="bg-white rounded-lg p-8 shadow-lg">
-            <p className="text-gray-700 mb-6">
-              We'd love to hear from you. Please reach out using the contact information below.
+      <main className="pt-20">
+        <h1 className="text-4xl md:text-5xl font-bold text-white text-center py-12 font-oxanium">
+          Contact Us
+        </h1>
+        <div className="container mx-auto px-4 py-12">
+          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-xl p-8">
+            <p className="text-lg text-gray-700 mb-8">
+              Ready to transform your business finances? Get in touch with our team of AI bookkeeping experts.
             </p>
             <div className="space-y-4">
               <div>
