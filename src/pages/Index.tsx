@@ -19,6 +19,7 @@ const Index = () => {
         <meta property="og:description" content="Revolutionize your business bookkeeping with AI-powered automation. Get real-time financial insights and save time." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://aibookkeeping.com" />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AI Bookkeeping: Transform Your Business Finances" />
         <meta name="twitter:description" content="Revolutionize your business bookkeeping with AI-powered automation." />

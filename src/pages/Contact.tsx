@@ -14,8 +14,11 @@ const Contact = () => {
         <meta property="og:description" content="Get expert support for your business financial needs." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://aibookkeeping.com/contact" />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact AI Bookkeeping" />
         <meta name="twitter:description" content="Expert financial support at your service." />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
       <Header />
       <main className="pt-20">

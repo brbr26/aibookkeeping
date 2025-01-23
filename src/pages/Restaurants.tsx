@@ -8,16 +8,17 @@ const Restaurants = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Restaurant Financial Management & Cost Control | AI Bookkeeping</title>
-        <meta name="description" content="Optimize your restaurant's finances with AI-powered bookkeeping. Control food costs, manage inventory, and maximize profitability with automated financial solutions." />
-        <meta name="keywords" content="restaurant bookkeeping, food cost management, inventory control, restaurant accounting, POS integration" />
-        <meta property="og:title" content="Restaurant Financial Management & Cost Control | AI Bookkeeping" />
-        <meta property="og:description" content="Optimize your restaurant's finances with AI-powered bookkeeping solutions." />
+        <title>Restaurant Financial Management | AI-Powered Hospitality Bookkeeping</title>
+        <meta name="description" content="Specialized financial services for restaurants. Manage food costs, track inventory, and optimize operations with AI-powered bookkeeping solutions for the hospitality industry." />
+        <meta name="keywords" content="restaurant bookkeeping, food cost management, hospitality accounting, restaurant financial services" />
+        <meta property="og:title" content="Restaurant Financial Management | AI Bookkeeping" />
+        <meta property="og:description" content="Transform your restaurant's financial management with AI-powered solutions." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://aibookkeeping.com/restaurants" />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Restaurant Financial Management & Cost Control" />
-        <meta name="twitter:description" content="Optimize your restaurant's finances with AI solutions." />
+        <meta name="twitter:title" content="Restaurant Financial Management" />
+        <meta name="twitter:description" content="AI-powered bookkeeping for restaurants." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <link rel="canonical" href="https://aibookkeeping.com/restaurants" />
       </Helmet>
@@ -33,9 +34,8 @@ const Restaurants = () => {
             </span>
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto font-lato">
-            Specialized bookkeeping, financial management, and analytics services designed for 
-            restaurants. From inventory control to menu costing, we help you optimize your 
-            operations and maximize profitability.
+            Specialized bookkeeping and financial management services designed for restaurants. 
+            From food cost analysis to inventory management, we help you optimize your restaurant's finances.
           </p>
         </section>
 

@@ -8,16 +8,17 @@ const RealEstate = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <Helmet>
-        <title>Real Estate Investment & Property Management Financial Services | AI Bookkeeping</title>
-        <meta name="description" content="Comprehensive financial management for real estate investors and property managers. Track rental income, manage expenses, and optimize ROI with AI-powered solutions." />
-        <meta name="keywords" content="real estate bookkeeping, property management accounting, rental property finances, real estate investment tracking, property portfolio management" />
-        <meta property="og:title" content="Real Estate Investment & Property Management Financial Services | AI Bookkeeping" />
-        <meta property="og:description" content="Comprehensive financial management for real estate investors and property managers." />
+        <title>Real Estate Financial Management | AI-Powered Property Bookkeeping</title>
+        <meta name="description" content="Specialized financial services for real estate businesses. Manage property finances, track rentals, and optimize operations with AI-powered bookkeeping solutions." />
+        <meta name="keywords" content="real estate bookkeeping, property management accounting, rental tracking, real estate financial services" />
+        <meta property="og:title" content="Real Estate Financial Management | AI Bookkeeping" />
+        <meta property="og:description" content="Transform your real estate business finances with AI-powered solutions." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://aibookkeeping.com/real-estate" />
         <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Real Estate Investment & Property Management Services" />
-        <meta name="twitter:description" content="Comprehensive financial management for real estate." />
+        <meta name="twitter:title" content="Real Estate Financial Management" />
+        <meta name="twitter:description" content="AI-powered bookkeeping for real estate businesses." />
         <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
         <link rel="canonical" href="https://aibookkeeping.com/real-estate" />
       </Helmet>
@@ -33,8 +34,8 @@ const RealEstate = () => {
             </span>
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto font-lato">
-            Specialized bookkeeping and financial management services designed for real estate investors and property managers. 
-            From property expense tracking to tenant management, we help you maximize your real estate portfolio's performance.
+            Specialized bookkeeping and financial management services designed for real estate professionals. 
+            From property management to investment tracking, we help you optimize your real estate portfolio.
           </p>
         </section>
 

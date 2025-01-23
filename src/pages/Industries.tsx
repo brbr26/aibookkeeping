@@ -15,15 +15,20 @@ const Industries = () => {
         <meta property="og:description" content="Tailored financial management solutions for your industry." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://aibookkeeping.com/industries" />
+        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Industry-Specific Bookkeeping" />
         <meta name="twitter:description" content="Specialized AI financial solutions for your sector." />
+        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
       </Helmet>
       <Header />
       <main className="pt-20">
         <h1 className="text-4xl md:text-5xl font-bold text-white text-center py-12 font-oxanium">
           Industries We Serve
         </h1>
-        <IndustriesGrid />
+        <div className="container mx-auto px-4 pb-20">
+          <IndustriesGrid />
+        </div>
       </main>
       <Footer />
     </div>
