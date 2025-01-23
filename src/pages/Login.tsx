@@ -1,109 +1,26 @@
-import { Auth } from "@supabase/auth-ui-react";
-import { ThemeSupa } from "@supabase/auth-ui-shared";
-import { supabase } from "@/integrations/supabase/client";
-import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { AlertCircle } from "lucide-react";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Helmet } from "react-helmet-async";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 const Login = () => {
-  const navigate = useNavigate();
-  const [error, setError] = useState<string>("");
-
-  useEffect(() => {
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      if (event === "SIGNED_IN") {
-        navigate("/");
-      }
-    });
-
-    return () => subscription.unsubscribe();
-  }, [navigate]);
-
   return (
-    <div className="min-h-screen bg-[#121212] flex flex-col justify-center py-6 sm:px-6 lg:px-8">
-      <Helmet>
-        <title>Sign In | AI Bookkeeping</title>
-        <meta name="description" content="Sign in to your AI Bookkeeping account to access your financial dashboard and manage your bookkeeping services." />
-        <meta name="keywords" content="login, sign in, AI bookkeeping account, financial dashboard" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Sign In | AI Bookkeeping" />
-        <meta property="og:description" content="Sign in to your AI Bookkeeping account to access your financial dashboard and manage your bookkeeping services." />
-        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sign In | AI Bookkeeping" />
-        <meta name="twitter:description" content="Sign in to your AI Bookkeeping account to access your financial dashboard and manage your bookkeeping services." />
-        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-      </Helmet>
+    <div className="min-h-screen bg-[#121212]">
+      <Header />
+      
+      <main className="container mx-auto px-4">
+        <section className="pt-32 md:pt-40 pb-16 text-center">
+          <h1 className="text-4xl md:text-6xl font-oxanium text-white mb-6 font-extrabold">
+            Login to{" "}
+            <span className="bg-gradient-to-r from-[#7C3AED] to-[#9F7AEA] text-transparent bg-clip-text">
+              Your Account
+            </span>
+          </h1>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto font-lato">
+            Access your AI-powered bookkeeping dashboard.
+          </p>
+        </section>
+      </main>
 
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <Link to="/">
-          <img
-            src="/lovable-uploads/a6dbee86-3d1c-4a4c-ba9b-2d6683db259b.png"
-            alt="AI Bookkeeping Logo"
-            className="mx-auto h-24 sm:h-32 w-auto mb-8"
-          />
-        </Link>
-        <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-white font-oxanium">
-          Sign in to your account
-        </h2>
-      </div>
-
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md px-4 sm:px-0">
-        <div className="bg-[#1A1A1A] py-8 px-4 shadow-xl shadow-black/20 sm:rounded-lg sm:px-10 border border-primary/20">
-          {error && (
-            <Alert variant="destructive" className="mb-4">
-              <AlertCircle className="h-4 w-4" />
-              <AlertDescription>{error}</AlertDescription>
-            </Alert>
-          )}
-          
-          <Auth
-            supabaseClient={supabase}
-            appearance={{
-              theme: ThemeSupa,
-              variables: {
-                default: {
-                  colors: {
-                    brand: '#7C3AED',
-                    brandAccent: '#6D28D9',
-                    inputBackground: '#FFFFFF',
-                    inputText: '#121212',
-                    inputPlaceholder: '#666666',
-                    inputBorder: 'transparent',
-                    dividerBackground: '#2A1364',
-                    messageText: 'white',
-                    messageTextDanger: '#ef4444',
-                    anchorTextColor: '#FFFFFF',
-                    anchorTextHoverColor: '#E5E7EB'
-                  },
-                  fonts: {
-                    bodyFontFamily: `Lato, sans-serif`,
-                    buttonFontFamily: `Oxanium, sans-serif`,
-                    inputFontFamily: `Lato, sans-serif`,
-                    labelFontFamily: `Oxanium, sans-serif`,
-                  },
-                  radii: {
-                    borderRadiusButton: '0.5rem',
-                    buttonBorderRadius: '0.5rem',
-                    inputBorderRadius: '0.5rem',
-                  },
-                },
-              },
-              className: {
-                container: 'font-lato',
-                label: 'font-oxanium text-sm font-medium text-gray-300',
-                button: 'font-oxanium bg-[#7C3AED] hover:bg-[#6D28D9] text-white w-full py-3 rounded-md transition-colors duration-200 text-lg font-bold flex items-center justify-center gap-2 after:content-["→"] after:ml-2 after:text-xl',
-                input: 'font-lato bg-white border-primary/20 text-[#121212] placeholder-gray-400',
-                anchor: 'text-white hover:text-gray-200',
-              },
-            }}
-            theme="dark"
-            providers={[]}
-          />
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };

@@ -2,26 +2,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FranchiseServices } from "@/components/franchises/FranchiseServices";
 import { ServicesCTA } from "@/components/services/ServicesCTA";
-import { Helmet } from "react-helmet-async";
 
 const Franchises = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
-      <Helmet>
-        <title>Franchise Financial Management & Multi-Location Services | AI Bookkeeping</title>
-        <meta name="description" content="Comprehensive financial management for franchises. Streamline multi-location operations, track royalties, and ensure compliance with AI-powered bookkeeping solutions." />
-        <meta name="keywords" content="franchise bookkeeping, multi-location accounting, franchise financial management, royalty tracking, franchise compliance" />
-        <meta property="og:title" content="Franchise Financial Management & Multi-Location Services | AI Bookkeeping" />
-        <meta property="og:description" content="Comprehensive financial management for franchises. Optimize operations with AI-powered solutions." />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Franchise Financial Management & Multi-Location Services" />
-        <meta name="twitter:description" content="Comprehensive financial management for franchises." />
-        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <link rel="canonical" href="https://aibookkeeping.com/franchises" />
-      </Helmet>
-      
       <Header />
       
       <main className="container mx-auto px-4">
@@ -33,8 +17,8 @@ const Franchises = () => {
             </span>
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto font-lato">
-            Specialized bookkeeping and financial management services designed for franchise operations. 
-            From multi-location management to royalty tracking, we help you maintain financial clarity across your network.
+            Specialized bookkeeping and financial management services designed for franchise businesses. 
+            From multi-location management to performance analytics.
           </p>
         </section>
 

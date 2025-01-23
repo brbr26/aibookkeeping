@@ -2,27 +2,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { RealEstateServices } from "@/components/real-estate/RealEstateServices";
 import { ServicesCTA } from "@/components/services/ServicesCTA";
-import { Helmet } from "react-helmet-async";
 
 const RealEstate = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
-      <Helmet>
-        <title>Real Estate Financial Management | AI-Powered Property Bookkeeping</title>
-        <meta name="description" content="Specialized financial services for real estate businesses. Manage property finances, track rentals, and optimize operations with AI-powered bookkeeping solutions." />
-        <meta name="keywords" content="real estate bookkeeping, property management accounting, rental tracking, real estate financial services" />
-        <meta property="og:title" content="Real Estate Financial Management | AI Bookkeeping" />
-        <meta property="og:description" content="Transform your real estate business finances with AI-powered solutions." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aibookkeeping.com/real-estate" />
-        <meta property="og:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Real Estate Financial Management" />
-        <meta name="twitter:description" content="AI-powered bookkeeping for real estate businesses." />
-        <meta name="twitter:image" content="/lovable-uploads/e086e3c7-5d90-4e0f-bb00-cdb4859a19f0.png" />
-        <link rel="canonical" href="https://aibookkeeping.com/real-estate" />
-      </Helmet>
-      
       <Header />
       
       <main className="container mx-auto px-4">
@@ -35,7 +18,7 @@ const RealEstate = () => {
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto font-lato">
             Specialized bookkeeping and financial management services designed for real estate professionals. 
-            From property management to investment tracking, we help you optimize your real estate portfolio.
+            From property management to investment tracking.
           </p>
         </section>
 
