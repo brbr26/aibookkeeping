@@ -20,7 +20,7 @@ export const Hero = () => {
 
       <div className="container mx-auto relative z-20">
         <div className="max-w-5xl mx-auto text-center">
-          <div 
+          <h2 
             className="animate-fade-in-up text-[34px] md:text-6xl font-bold mb-8 font-oxanium leading-[1.0] md:leading-[1.0] tracking-tight mx-0"
             style={{
               containIntrinsicSize: '0 60px',
@@ -34,7 +34,7 @@ export const Hero = () => {
               <span className="text-white/90 font-oxanium"> &</span>
             </span>
             <span className="text-white/90 font-oxanium block">Machine Learning</span>
-          </div>
+          </h2>
           
           <p 
             className="animate-fade-in-up animation-delay-200 text-base md:text-xl text-white/80 mb-12 leading-relaxed max-w-2xl mx-auto min-h-[48px] font-light"
