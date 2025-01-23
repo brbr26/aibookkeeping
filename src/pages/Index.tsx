@@ -5,7 +5,6 @@ import { HomeServices } from "@/components/HomeServices";
 import { HomeIndustries } from "@/components/HomeIndustries";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   return (
